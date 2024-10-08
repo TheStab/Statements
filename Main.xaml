@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="806.4000000000001,649.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System.Text.RegularExpressions" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="806.4000000000001,604.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System.Text.RegularExpressions" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -132,7 +132,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="608,584.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="512,250.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="statusi" />
       <Variable x:TypeArguments="x:String" Name="svWertilebi" />
@@ -210,7 +210,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Get Ready Maintenance" sap:VirtualizedContainerService.HintSize="545.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_292">
+    <Sequence DisplayName="Get Ready Maintenance" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_292">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -307,22 +307,22 @@
         </If.Else>
       </If>
     </Sequence>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Links]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="545.6,391.2" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Links]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="LinksCurrentRow" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,193.6" sap2010:WorkflowViewState.IdRef="Sequence_277">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="664,646.4" sap2010:WorkflowViewState.IdRef="Sequence_277">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Process" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_324">
+            <Sequence DisplayName="Process" sap:VirtualizedContainerService.HintSize="601.6,509.6" sap2010:WorkflowViewState.IdRef="Sequence_324">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -5132,7 +5132,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NCheckState>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ბინა'" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_63" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V4">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="1" DisplayName="Click 'ბინა'" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_63" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V4">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="ac300509-db5f-4795-b15b-6ddc670c71f1" DesignTimeRectangle="584, 730, 240, 124" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-f90a41ca-3 gOmehI' innertext='ბინა' /&gt;" Guid="c3624a49-abdc-477b-a098-40513267a7a2" InformativeScreenshot="53ced8fc306f4c9601dee56adab9ecb4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                         </uix:NClick.Target>
@@ -5368,7 +5368,13 @@
                                   </sap:WorkflowViewStateService.ViewState>
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_66" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                                     <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="db281700-dbc2-4a4c-8985-a7dfd1630780" DesignTimeRectangle="918, 525, 45, 45" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-226b651b-0 kgzsHg' innertext='2' idx='1' /&gt;" Guid="ff70fe47-d8c4-41a9-ad56-9532af1620fa" InformativeScreenshot="421f6aac5bb8ac50a06e0512c3cd8bb2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="0c8917af-48c7-4fd4-ab36-7ec9af551d31" DesignTimeRectangle="916, 356, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl tag='DIV' class='sc-226b651b-0 kgzsHg' innertext='2' type='' aaname='' check:text='2' /&gt;" Guid="113e47a7-30ed-404f-ab67-4f636a6a82aa" InformativeScreenshot="9996d96d4590a1739ab712506d0502d6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <uix:Target CVScreenId="0c8917af-48c7-4fd4-ab36-7ec9af551d31" DesignTimeRectangle="660, 356, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='ოთახები*' tag='SPAN' class='sc-6e54cb25-19 cHrSsJ' type='' check:text='ოთახები*' /&gt;" Guid="84973603-d69c-4807-bff5-695edc6723ab" SearchSteps="FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
                                     </uix:NClick.Target>
                                   </uix:NClick>
                                 </Sequence>
@@ -5384,7 +5390,13 @@
                                   </sap:WorkflowViewStateService.ViewState>
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_67" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                                     <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="94e2f2af-5b03-41dc-a673-c3f8a0a4d1f2" DesignTimeRectangle="971, 525, 45, 45" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-226b651b-0 kgzsHg' innertext='3' idx='1' /&gt;" Guid="935bf3f3-d9a7-4af1-89dc-d0a28fe11f76" InformativeScreenshot="5e6c2dcd72b8a57876165e8475f44232.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="c7e67601-a0cc-4ee6-84d6-c18342639add" DesignTimeRectangle="972, 356, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' tag='DIV' aaname='' check:innerText='3' /&gt;" Guid="a0adc7b9-427d-4d02-8d8f-59a659dbd341" InformativeScreenshot="98f55b87d4aaec25dac085578fb2cd5c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <uix:Target CVScreenId="c7e67601-a0cc-4ee6-84d6-c18342639add" DesignTimeRectangle="660, 356, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='ოთახები*' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='ოთახები*' /&gt;" Guid="e52ff8a2-cf15-4221-9556-c59b6b5bcba8" SearchSteps="FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
                                     </uix:NClick.Target>
                                   </uix:NClick>
                                 </Sequence>
@@ -5400,7 +5412,13 @@
                                   </sap:WorkflowViewStateService.ViewState>
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_68" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                                     <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="901e8c30-8387-4ba8-9eff-937d5f53d842" DesignTimeRectangle="1023, 525, 45, 45" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-226b651b-0 kgzsHg' innertext='4' idx='1' /&gt;" Guid="ee24086e-cba3-4dbe-b1d0-c98c66ae5776" InformativeScreenshot="c78bdc2f82b1af5562e32b51654a175b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="c7e67601-a0cc-4ee6-84d6-c18342639add" DesignTimeRectangle="1028, 356, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' tag='DIV' aaname='' check:innerText='4' /&gt;" Guid="533eb045-ab1e-430a-990e-4beaa35cfd45" InformativeScreenshot="cd0d86c18bbdfc036c094cfc53e9516b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <uix:Target CVScreenId="c7e67601-a0cc-4ee6-84d6-c18342639add" DesignTimeRectangle="660, 356, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='ოთახები*' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='ოთახები*' /&gt;" Guid="06ec493f-7d32-4db4-8a3c-b53855cb7d3b" SearchSteps="FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
                                     </uix:NClick.Target>
                                   </uix:NClick>
                                 </Sequence>
@@ -5416,7 +5434,13 @@
                                   </sap:WorkflowViewStateService.ViewState>
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_69" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                                     <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="46cecb46-64f0-4821-a3e0-f3920d9e9e25" DesignTimeRectangle="1076, 525, 45, 45" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-226b651b-0 kgzsHg' innertext='5' idx='1' /&gt;" Guid="f32fc5d2-658b-4928-946a-38a5056ea7ab" InformativeScreenshot="69dca3f77108134cbe98a569d7dd8c8b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="c7e67601-a0cc-4ee6-84d6-c18342639add" DesignTimeRectangle="1084, 356, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' parentid='create-app-details' tag='DIV' aaname='' check:innerText='5' /&gt;" Guid="f69d70ca-978d-4c97-b0f4-359b56471d7a" InformativeScreenshot="902f0f267b4ed5e5b3188340fb475269.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <uix:Target CVScreenId="c7e67601-a0cc-4ee6-84d6-c18342639add" DesignTimeRectangle="660, 356, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='ოთახები*' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='ოთახები*' /&gt;" Guid="0c43240c-d087-4b02-9cb6-d2a57c278fca" SearchSteps="FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
                                     </uix:NClick.Target>
                                   </uix:NClick>
                                 </Sequence>
@@ -5432,7 +5456,13 @@
                                   </sap:WorkflowViewStateService.ViewState>
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_70" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                                     <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="3fb27f96-d205-4dfa-84fb-a62738063e50" DesignTimeRectangle="1128, 525, 45, 45" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-226b651b-0 kgzsHg' innertext='6' /&gt;" Guid="a6a9f180-7c2f-46e7-86aa-4e06eeb96ec1" InformativeScreenshot="b81efb97246ac76ccb9bd5062e84ace2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="c7e67601-a0cc-4ee6-84d6-c18342639add" DesignTimeRectangle="1140, 356, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' tag='DIV' aaname='' check:innerText='6' /&gt;" Guid="30e3b26e-cf93-4171-bdd9-1510dddb0755" InformativeScreenshot="8551973de354f46fc2caeb87035ca603.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <uix:Target CVScreenId="c7e67601-a0cc-4ee6-84d6-c18342639add" DesignTimeRectangle="660, 356, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='ოთახები*' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='ოთახები*' /&gt;" Guid="b58e29c8-d7ed-4551-b806-6a73da76574c" SearchSteps="FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
                                     </uix:NClick.Target>
                                   </uix:NClick>
                                 </Sequence>
@@ -5448,7 +5478,13 @@
                                   </sap:WorkflowViewStateService.ViewState>
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_71" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                                     <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="0873daa7-d999-4e7a-9904-1ead9bd47ac0" DesignTimeRectangle="1181, 525, 45, 45" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-226b651b-0 kgzsHg' innertext='7' /&gt;" Guid="990f2518-edc0-4d03-ad2d-30ca80043ec6" InformativeScreenshot="a45324f5486ae8ef866f05a585824b49.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="c7e67601-a0cc-4ee6-84d6-c18342639add" DesignTimeRectangle="1196, 356, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' tag='DIV' aaname='' check:innerText='7' /&gt;" Guid="2a088484-3850-4c5b-aa29-706863bf3374" InformativeScreenshot="baee054a654b27b2c7a99776e8936d4d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <uix:Target CVScreenId="c7e67601-a0cc-4ee6-84d6-c18342639add" DesignTimeRectangle="660, 356, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='ოთახები*' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='ოთახები*' /&gt;" Guid="c523c7d5-5b7a-45af-a0ca-2dad7e8f9a46" SearchSteps="FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
                                     </uix:NClick.Target>
                                   </uix:NClick>
                                 </Sequence>
@@ -5464,7 +5500,13 @@
                                   </sap:WorkflowViewStateService.ViewState>
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_72" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                                     <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="2b4527fe-4a50-4a1c-8306-cc6922cd525b" DesignTimeRectangle="866, 578, 45, 45" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-226b651b-0 kgzsHg' innertext='8' /&gt;" Guid="3b0059bb-0e61-4de1-8b54-badb92fb1b57" InformativeScreenshot="f219bd9f95dd95916e6141cf0fc844aa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="c7e67601-a0cc-4ee6-84d6-c18342639add" DesignTimeRectangle="860, 503, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg active' tag='DIV' aaname='' check:innerText='8' /&gt;" Guid="76a833e2-0a8c-44cb-ba6b-b8c4d807fe7a" InformativeScreenshot="0ba406273c52c450d1f6399b035dbdad.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <uix:Target CVScreenId="6e142713-4ff7-4fb2-b27f-0bfcd6b60374" DesignTimeRectangle="660, 447, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='ოთახები*' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='ოთახები*' /&gt;" Guid="3724da5b-acec-4d15-91f4-25467d28b0b2" SearchSteps="FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
                                     </uix:NClick.Target>
                                   </uix:NClick>
                                 </Sequence>
@@ -5480,7 +5522,13 @@
                                   </sap:WorkflowViewStateService.ViewState>
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_73" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                                     <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="17a90afb-d1c1-46dc-a238-9304be1bfbc9" DesignTimeRectangle="918, 578, 47, 45" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-226b651b-0 kgzsHg' innertext='8+' /&gt;" Guid="f1a8654a-48f5-42fe-94d0-1a67cd5f978f" InformativeScreenshot="87d87dd08aff7fd4c027cf49269da68b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="650dc4a5-ac5a-4a8d-b8ab-3a9362bdd99f" DesignTimeRectangle="916, 503, 50, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' tag='DIV' aaname='' check:innerText='8+' /&gt;" Guid="b038208a-af4f-4680-9fe2-9a1c3f704535" InformativeScreenshot="1b65ab6e0e897551df4e10b4149cb066.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <uix:Target CVScreenId="650dc4a5-ac5a-4a8d-b8ab-3a9362bdd99f" DesignTimeRectangle="660, 447, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='ოთახები*' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='ოთახები*' /&gt;" Guid="d8e7c758-cae8-4178-bb0f-e3e187b99eb6" SearchSteps="FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
                                     </uix:NClick.Target>
                                   </uix:NClick>
                                   <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,277.6" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Text="[Bedroom]" Version="V4">
@@ -5509,9 +5557,15 @@
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_74" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_152" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                                     <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="17a90afb-d1c1-46dc-a238-9304be1bfbc9" DesignTimeRectangle="918, 578, 47, 45" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-226b651b-0 kgzsHg' innertext='8+' /&gt;" Guid="f1a8654a-48f5-42fe-94d0-1a67cd5f978f" InformativeScreenshot="87d87dd08aff7fd4c027cf49269da68b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="650dc4a5-ac5a-4a8d-b8ab-3a9362bdd99f" DesignTimeRectangle="916, 503, 50, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' tag='DIV' aaname='' check:innerText='8+' /&gt;" Guid="b038208a-af4f-4680-9fe2-9a1c3f704535" InformativeScreenshot="1b65ab6e0e897551df4e10b4149cb066.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target CVScreenId="650dc4a5-ac5a-4a8d-b8ab-3a9362bdd99f" DesignTimeRectangle="660, 447, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='ოთახები*' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='ოთახები*' /&gt;" Guid="d8e7c758-cae8-4178-bb0f-e3e187b99eb6" SearchSteps="FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
                                     </uix:NClick.Target>
                                   </uix:NClick>
                                   <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,277.6" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Text="[Bedroom]" Version="V4">
@@ -5549,7 +5603,13 @@
                             </sap:WorkflowViewStateService.ViewState>
                             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_65" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                               <uix:NClick.Target>
-                                <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="9179f65d-8a58-431d-9974-6463cae66fb5" DesignTimeRectangle="866, 525, 45, 45" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-226b651b-0 kgzsHg' innertext='1' idx='1' /&gt;" Guid="fe3af042-5045-410b-a9e4-e0c640f39a66" InformativeScreenshot="5f05fc8ee0f5beea52b26dd24394526b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="ba4074c2-c7af-406d-b760-87217ec9c8f1" DesignTimeRectangle="860, 356, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl parentid='create-app-details' tag='DIV' class='sc-226b651b-0 kgzsHg' type='' aaname='' check:text='1' /&gt;" Guid="a7515bf7-63f1-4e7a-b847-be98f962743d" InformativeScreenshot="cf2a2dfb0d6083c8bdedafc1cac550a5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target CVScreenId="ba4074c2-c7af-406d-b760-87217ec9c8f1" DesignTimeRectangle="660, 356, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='ოთახები*' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='ოთახები*' /&gt;" Guid="91a8a144-0850-4066-ac86-88de2894e5c0" ImageBase64="" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
                               </uix:NClick.Target>
                             </uix:NClick>
                           </Sequence>
@@ -5563,13 +5623,14 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <If.Then>
-                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,136.8" sap2010:WorkflowViewState.IdRef="Sequence_221">
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="512,3097.6" sap2010:WorkflowViewState.IdRef="Sequence_221">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:IfElseIfV2 Condition="[Bedroom=&quot;1&quot;]" DisplayName="Else If  Bedroom" sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="IfElseIfV2_11">
+                            <ui:IfElseIfV2 Condition="[Bedroom=&quot;1&quot;]" DisplayName="Else If  Bedroom" sap:VirtualizedContainerService.HintSize="449.6,3008.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_11">
                               <ui:IfElseIfV2.Else>
                                 <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,256" sap2010:WorkflowViewState.IdRef="Sequence_220">
                                   <sap:WorkflowViewStateService.ViewState>
@@ -5592,7 +5653,13 @@
                                         </sap:WorkflowViewStateService.ViewState>
                                         <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_76" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                                           <uix:NClick.Target>
-                                            <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="62ddb72d-59bb-4c8e-90cd-09c4bc16f8cd" DesignTimeRectangle="918, 669, 45, 45" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-226b651b-0 kgzsHg' innertext='2' idx='2' /&gt;" Guid="5fd3caf0-1f85-44eb-bc1b-200bed09b255" InformativeScreenshot="f57df4d666d8524746628f5742a687fa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                            <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="f5a1e740-991b-45e0-b56a-989432813211" DesignTimeRectangle="916, 600, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' tag='DIV' aaname='' check:innerText='2' /&gt;" Guid="9676c1de-c699-4465-a020-b413579ffd34" InformativeScreenshot="c9498326ae8259ff5dfbe0b1db9ad444.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                  <uix:Target CVScreenId="f5a1e740-991b-45e0-b56a-989432813211" DesignTimeRectangle="660, 600, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='საძინებელი*' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='საძინებელი*' /&gt;" Guid="992ec4f9-9804-4a94-8032-f36ae07871e4" SearchSteps="FuzzySelector" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
                                           </uix:NClick.Target>
                                         </uix:NClick>
                                       </Sequence>
@@ -5608,7 +5675,13 @@
                                         </sap:WorkflowViewStateService.ViewState>
                                         <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_77" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                                           <uix:NClick.Target>
-                                            <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="5ed727c9-d705-4bdf-a852-517e3e095218" DesignTimeRectangle="971, 669, 45, 45" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-226b651b-0 kgzsHg' innertext='3' idx='2' /&gt;" Guid="9e6d6a4e-e8fb-4e3c-a811-c8688fe4ccee" InformativeScreenshot="ca003dd659de72b0b16a38c0312b1f99.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                            <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="f5a1e740-991b-45e0-b56a-989432813211" DesignTimeRectangle="972, 600, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' tag='DIV' aaname='' check:innerText='3' /&gt;" Guid="639c6caf-29c0-43dd-8603-3b10f45cdb8d" InformativeScreenshot="2e3b45216e91879f73772917fb663257.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                  <uix:Target CVScreenId="f5a1e740-991b-45e0-b56a-989432813211" DesignTimeRectangle="660, 600, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='საძინებელი*' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='საძინებელი*' /&gt;" Guid="65dde315-04d3-4fc5-a520-38a36b287a34" SearchSteps="FuzzySelector" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
                                           </uix:NClick.Target>
                                         </uix:NClick>
                                       </Sequence>
@@ -5624,7 +5697,13 @@
                                         </sap:WorkflowViewStateService.ViewState>
                                         <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_78" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                                           <uix:NClick.Target>
-                                            <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="edfbf649-94ad-46d9-aa98-6e4db7ae5810" DesignTimeRectangle="1023, 669, 45, 45" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-226b651b-0 kgzsHg' innertext='4' idx='2' /&gt;" Guid="86e23e77-e11e-423f-bdfd-4e0648e5b08e" InformativeScreenshot="6c8f9ed2d622dd68a83e8bc6443c9db6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                            <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="f5a1e740-991b-45e0-b56a-989432813211" DesignTimeRectangle="1028, 600, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' tag='DIV' aaname='' check:innerText='4' /&gt;" Guid="dc3cb345-f35f-42f8-bce5-1af172063e1d" InformativeScreenshot="685cccb2bc5f0048d964ff76070937c3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                  <uix:Target CVScreenId="f5a1e740-991b-45e0-b56a-989432813211" DesignTimeRectangle="660, 600, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='საძინებელი*' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='საძინებელი*' /&gt;" Guid="4f23429c-564b-4228-b1d5-533a8424e90d" SearchSteps="FuzzySelector" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
                                           </uix:NClick.Target>
                                         </uix:NClick>
                                       </Sequence>
@@ -5640,7 +5719,13 @@
                                         </sap:WorkflowViewStateService.ViewState>
                                         <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_79" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                                           <uix:NClick.Target>
-                                            <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="22bec453-f0e5-423e-ace9-92bd1568e65d" DesignTimeRectangle="1076, 669, 45, 45" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-226b651b-0 kgzsHg' innertext='5' idx='2' /&gt;" Guid="602b6bd4-a6d0-4064-abe3-9c75a0701619" InformativeScreenshot="edfe1ec06c9c4cce864d94a26eb1f97c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                            <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="f5a1e740-991b-45e0-b56a-989432813211" DesignTimeRectangle="1084, 600, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' tag='DIV' aaname='' check:innerText='5' /&gt;" Guid="3af7e471-a2ba-41e5-aed5-0fb3d4eda9e4" InformativeScreenshot="4399eefebbaded11c80431f87a3426d4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                  <uix:Target CVScreenId="f5a1e740-991b-45e0-b56a-989432813211" DesignTimeRectangle="660, 600, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='საძინებელი*' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='საძინებელი*' /&gt;" Guid="447cc07a-6226-4ad1-aeca-2f5441b8ecee" SearchSteps="FuzzySelector" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
                                           </uix:NClick.Target>
                                         </uix:NClick>
                                       </Sequence>
@@ -5656,7 +5741,13 @@
                                         </sap:WorkflowViewStateService.ViewState>
                                         <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_80" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                                           <uix:NClick.Target>
-                                            <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="18b3a6f7-0d8b-4c22-9f63-da233d0b153b" DesignTimeRectangle="1128, 669, 45, 45" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-226b651b-0 kgzsHg' innertext='6' idx='2' /&gt;" Guid="a1efe9da-151c-47b1-9383-8a1ea4714cf2" InformativeScreenshot="8b0da127bd1a7d4af17efbf7ecb95943.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                            <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="f5a1e740-991b-45e0-b56a-989432813211" DesignTimeRectangle="1140, 600, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' tag='DIV' aaname='' check:innerText='6' /&gt;" Guid="ab9db8bb-c5c5-4df1-bc54-a8fca94ffd7f" InformativeScreenshot="bf352a43bff2d5b73e4058c9561f0c47.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                  <uix:Target CVScreenId="f5a1e740-991b-45e0-b56a-989432813211" DesignTimeRectangle="660, 600, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='საძინებელი*' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='საძინებელი*' /&gt;" Guid="55969bef-9431-4c86-aa92-449a293aabfe" SearchSteps="FuzzySelector" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
                                           </uix:NClick.Target>
                                         </uix:NClick>
                                       </Sequence>
@@ -5672,7 +5763,13 @@
                                         </sap:WorkflowViewStateService.ViewState>
                                         <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_81" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                                           <uix:NClick.Target>
-                                            <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="a9e40596-5094-4f49-aab8-14d128a2d672" DesignTimeRectangle="1181, 669, 45, 45" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-226b651b-0 kgzsHg' innertext='7' idx='2' /&gt;" Guid="b049c0e1-b7c9-4a14-a817-682304439a33" InformativeScreenshot="7e7599f1b29a5b5445b0cafc7003344d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                            <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="f5a1e740-991b-45e0-b56a-989432813211" DesignTimeRectangle="1196, 600, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' tag='DIV' aaname='' check:innerText='7' /&gt;" Guid="cab682ba-a375-4b39-a1d4-7b53720f4bcb" InformativeScreenshot="5aaf78bcd34b0d55d0d6e8c7d64ad103.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                  <uix:Target CVScreenId="f5a1e740-991b-45e0-b56a-989432813211" DesignTimeRectangle="660, 600, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='საძინებელი*' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='საძინებელი*' /&gt;" Guid="d0fc9cbf-5cad-4f9b-9973-f5a06e3bba20" SearchSteps="FuzzySelector" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
                                           </uix:NClick.Target>
                                         </uix:NClick>
                                       </Sequence>
@@ -5688,7 +5785,13 @@
                                         </sap:WorkflowViewStateService.ViewState>
                                         <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_82" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                                           <uix:NClick.Target>
-                                            <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="59be7d66-e9c8-4e15-811f-5ae588ad5a56" DesignTimeRectangle="866, 721, 45, 45" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-226b651b-0 kgzsHg' innertext='8' /&gt;" Guid="5056cf1a-62a7-4ffa-9be5-9f02e8bd3cb1" InformativeScreenshot="e36a28d1738927575dc9417526514f1d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                            <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="f5a1e740-991b-45e0-b56a-989432813211" DesignTimeRectangle="860, 664, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' tag='DIV' aaname='' check:innerText='8' /&gt;" Guid="8559bb6c-3da0-4d50-a8cc-7a16dcf55899" InformativeScreenshot="fb6e98dfe38d27cc8eb05f746a998e66.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                  <uix:Target CVScreenId="f5a1e740-991b-45e0-b56a-989432813211" DesignTimeRectangle="660, 608, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='საძინებელი*' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='საძინებელი*' /&gt;" Guid="3da10450-0ecb-4cea-a4a0-a1cb2af8ede2" SearchSteps="FuzzySelector" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
                                           </uix:NClick.Target>
                                         </uix:NClick>
                                       </Sequence>
@@ -5698,7 +5801,7 @@
                               </ui:IfElseIfV2.ElseIfs>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
@@ -5711,7 +5814,13 @@
                                   </sap:WorkflowViewStateService.ViewState>
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_75" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                                     <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="08b9abe4-6e26-471d-a181-78d006159476" DesignTimeRectangle="866, 669, 45, 45" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-226b651b-0 kgzsHg' innertext='1' idx='2' /&gt;" Guid="d62fdbf5-05e5-4673-a769-d076efdfef41" InformativeScreenshot="8d96d11e5af7f0485cf7446e643894f6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="f5a1e740-991b-45e0-b56a-989432813211" DesignTimeRectangle="860, 600, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' tag='DIV' aaname='' check:innerText='1' /&gt;" Guid="ac3d481e-fa54-4d5d-bb99-81381ac1fb2c" InformativeScreenshot="884cf600895248ea23a495aa6e3d4278.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <uix:Target CVScreenId="f5a1e740-991b-45e0-b56a-989432813211" DesignTimeRectangle="660, 600, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='საძინებელი*' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='საძინებელი*' /&gt;" Guid="e7880bc8-7b9f-481b-915d-f45242f54904" SearchSteps="FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
                                     </uix:NClick.Target>
                                   </uix:NClick>
                                 </Sequence>
@@ -5815,7 +5924,13 @@
                                   </sap:WorkflowViewStateService.ViewState>
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_84" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                                     <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="be9c2e18-a1c0-463b-b1be-aea6f7f6f39c" DesignTimeRectangle="918, 591, 45, 45" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-226b651b-0 kgzsHg' innertext='2' idx='2' /&gt;" Guid="8e706968-ce39-4be4-a417-ac53b39f6b9a" InformativeScreenshot="b3bef9101010f79d11649476e46b0909.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="f5552fdf-c689-4133-997e-b1a78ab72a93" DesignTimeRectangle="916, 431, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' tag='DIV' aaname='' check:innerText='2' /&gt;" Guid="333e4efe-54e5-4777-968a-90bf31d6e79b" InformativeScreenshot="0d17162a926848237643758b72e9fe9d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <uix:Target CVScreenId="f5552fdf-c689-4133-997e-b1a78ab72a93" DesignTimeRectangle="660, 431, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='აივანი / ლოჯია' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='აივანი / ლოჯია' /&gt;" Guid="31abe8c9-e9f2-417f-a34c-ecd3dc1333e2" SearchSteps="FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
                                     </uix:NClick.Target>
                                   </uix:NClick>
                                 </Sequence>
@@ -5831,7 +5946,13 @@
                                   </sap:WorkflowViewStateService.ViewState>
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_85" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                                     <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="c11827e5-6f4f-476d-a637-246b85c8b021" DesignTimeRectangle="971, 591, 45, 45" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-226b651b-0 kgzsHg' innertext='3' idx='2' /&gt;" Guid="78e7769f-e1db-4983-b226-a7c0b4102a06" InformativeScreenshot="e0a42e1f3c3f0037878255ecb780a1fc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="f5552fdf-c689-4133-997e-b1a78ab72a93" DesignTimeRectangle="972, 431, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' tag='DIV' aaname='' check:innerText='3' /&gt;" Guid="063738b1-8f9b-4712-87e5-1f00b52a22b7" InformativeScreenshot="f2ec3608d311e31fd55a9cdaabbabc1f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <uix:Target CVScreenId="f5552fdf-c689-4133-997e-b1a78ab72a93" DesignTimeRectangle="660, 431, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='აივანი / ლოჯია' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='აივანი / ლოჯია' /&gt;" Guid="04110c9e-a17a-42a7-b9a4-7d2687e8d7ce" SearchSteps="FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
                                     </uix:NClick.Target>
                                   </uix:NClick>
                                 </Sequence>
@@ -5847,7 +5968,13 @@
                                   </sap:WorkflowViewStateService.ViewState>
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_86" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                                     <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="91bd3ac0-17aa-4ee9-902e-f184763026a0" DesignTimeRectangle="1023, 591, 45, 45" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-226b651b-0 kgzsHg' innertext='4' idx='2' /&gt;" Guid="f5bcac55-38e1-445b-9d99-7af095f4b243" InformativeScreenshot="7206d13056c90c9a26245ac468610561.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="f5552fdf-c689-4133-997e-b1a78ab72a93" DesignTimeRectangle="1028, 431, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' tag='DIV' aaname='' check:innerText='4' /&gt;" Guid="b529b755-84e7-44ca-8e8a-5371f16407d5" InformativeScreenshot="12d1869e46bd57c22052da826cbe206c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <uix:Target CVScreenId="f5552fdf-c689-4133-997e-b1a78ab72a93" DesignTimeRectangle="660, 431, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='აივანი / ლოჯია' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='აივანი / ლოჯია' /&gt;" Guid="e879968c-e372-47a3-9b11-a2c964b8a307" SearchSteps="FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
                                     </uix:NClick.Target>
                                   </uix:NClick>
                                 </Sequence>
@@ -5863,7 +5990,13 @@
                                   </sap:WorkflowViewStateService.ViewState>
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_87" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                                     <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="50636118-1731-42f7-bcae-3ef334a83bae" DesignTimeRectangle="1128, 339, 82, 45" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-226b651b-0 kgzsHg' innertext='არ აქვს' idx='1' /&gt;" Guid="b8992d14-3503-4fa1-b42a-9aefb53d8328" InformativeScreenshot="c14871fa1829fe06792fcf07c28882ad.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="f5552fdf-c689-4133-997e-b1a78ab72a93" DesignTimeRectangle="1140, 431, 86, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' tag='DIV' aaname='' check:innerText='არ აქვს' /&gt;" Guid="373aaf10-a700-48c7-9312-2bfe60201cad" InformativeScreenshot="b13cfaec2b63f634af850579ef5345fd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <uix:Target CVScreenId="f5552fdf-c689-4133-997e-b1a78ab72a93" DesignTimeRectangle="660, 431, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='აივანი / ლოჯია' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='აივანი / ლოჯია' /&gt;" Guid="a3607a1d-3f86-4456-8aef-6651fd0daa0a" SearchSteps="FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
                                     </uix:NClick.Target>
                                   </uix:NClick>
                                 </Sequence>
@@ -5879,7 +6012,13 @@
                                   </sap:WorkflowViewStateService.ViewState>
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_88" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                                     <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="11601dfa-5aac-409d-9d28-011935d6c368" DesignTimeRectangle="1076, 591, 45, 45" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-226b651b-0 kgzsHg' innertext='5' idx='2' /&gt;" Guid="2ff1902a-5411-4c98-8639-697338f8dc5d" InformativeScreenshot="7d9a033019e37f0130ec37457428b0a9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="f5552fdf-c689-4133-997e-b1a78ab72a93" DesignTimeRectangle="1084, 431, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' tag='DIV' aaname='' check:innerText='5' /&gt;" Guid="fcfc9032-d7dd-4aa1-8244-b232e5a4d559" InformativeScreenshot="975879860b440c247bab6630102d24c0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <uix:Target CVScreenId="f5552fdf-c689-4133-997e-b1a78ab72a93" DesignTimeRectangle="660, 431, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='აივანი / ლოჯია' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='აივანი / ლოჯია' /&gt;" Guid="747c143a-fab4-4c57-bde2-5adaafe67792" SearchSteps="FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
                                     </uix:NClick.Target>
                                   </uix:NClick>
                                 </Sequence>
@@ -5902,7 +6041,13 @@
                             </sap:WorkflowViewStateService.ViewState>
                             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_83" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                               <uix:NClick.Target>
-                                <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="91638348-5424-4a33-8545-b6b77bc2aed2" DesignTimeRectangle="866, 591, 45, 45" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-226b651b-0 kgzsHg' innertext='1' idx='2' /&gt;" Guid="32d5639c-d0cf-487d-b344-bad879be7042" InformativeScreenshot="63ecde96debdc68988aa1d7aa15bcb30.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="1e7c06ba-c916-4f1a-a909-c0ce94eecaa7" DesignTimeRectangle="860, 431, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' tag='DIV' aaname='' check:innerText='1' /&gt;" Guid="91f64bd2-ffdb-43f5-a191-0e1bf85ee491" InformativeScreenshot="e417bb969f6ccb64380c13141d0a596c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target CVScreenId="1e7c06ba-c916-4f1a-a909-c0ce94eecaa7" DesignTimeRectangle="660, 431, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='აივანი / ლოჯია' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='აივანი / ლოჯია' /&gt;" Guid="864a499e-ff17-473c-ad44-700f5e526ee6" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
                               </uix:NClick.Target>
                             </uix:NClick>
                           </Sequence>
@@ -5919,10 +6064,10 @@
                             </sap:WorkflowViewStateService.ViewState>
                             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_137" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                               <uix:NClick.Target>
-                                <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="9fe73ddd-a802-43f6-b21f-b180ca6e1ce9" DesignTimeRectangle="1142, 620, 86, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' parentid='create-app-details' tag='DIV' aaname='' check:innerText='არ აქვს' /&gt;" Guid="d0987048-3ab3-40f1-9973-1b60945b5efe" InformativeScreenshot="caa0303074cf9c6420382e27fd385a2c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="9fe73ddd-a802-43f6-b21f-b180ca6e1ce9" DesignTimeRectangle="1142, 528, 86, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' tag='DIV' aaname='' check:innerText='არ აქვს' /&gt;" Guid="d0987048-3ab3-40f1-9973-1b60945b5efe" ImageBase64="" InformativeScreenshot="34bde03da780b3d6368069e4f0c6235c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                      <uix:Target CVScreenId="9fe73ddd-a802-43f6-b21f-b180ca6e1ce9" DesignTimeRectangle="660, 620, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='სველი წერტილი' parentid='create-app-details' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='სველი წერტილი' /&gt;" Guid="a486b91e-8d0f-4d9a-9780-f1a51f9c1e4e" SearchSteps="FuzzySelector" />
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target CVScreenId="9fe73ddd-a802-43f6-b21f-b180ca6e1ce9" DesignTimeRectangle="660, 528, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='სველი წერტილი' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='სველი წერტილი' /&gt;" Guid="a486b91e-8d0f-4d9a-9780-f1a51f9c1e4e" ImageBase64="" SearchSteps="FuzzySelector" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
                                 </uix:TargetAnchorable>
@@ -5943,10 +6088,10 @@
                                   </sap:WorkflowViewStateService.ViewState>
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_90" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                                     <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="24138548-2a45-448e-af07-d6035b228d97" DesignTimeRectangle="916, 620, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' parentid='create-app-details' tag='DIV' aaname='' check:innerText='2' /&gt;" Guid="0364ae0f-b68e-41ce-8bb2-0eb91df74fa8" InformativeScreenshot="08dd783f292d06f4d6976e09ef42f4a4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="24138548-2a45-448e-af07-d6035b228d97" DesignTimeRectangle="916, 528, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' tag='DIV' aaname='' check:innerText='2' /&gt;" Guid="0364ae0f-b68e-41ce-8bb2-0eb91df74fa8" ImageBase64="" InformativeScreenshot="ae620cffe727b4ae0252e4506df5725c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                                         <uix:TargetAnchorable.Anchors>
-                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                            <uix:Target CVScreenId="24138548-2a45-448e-af07-d6035b228d97" DesignTimeRectangle="660, 620, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='სველი წერტილი' parentid='create-app-details' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='სველი წერტილი' /&gt;" Guid="25b308d7-7af5-42cf-af1e-c165cce4c1f6" SearchSteps="FuzzySelector" />
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <uix:Target CVScreenId="24138548-2a45-448e-af07-d6035b228d97" DesignTimeRectangle="660, 528, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='სველი წერტილი' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='სველი წერტილი' /&gt;" Guid="25b308d7-7af5-42cf-af1e-c165cce4c1f6" ImageBase64="" SearchSteps="FuzzySelector" />
                                           </scg:List>
                                         </uix:TargetAnchorable.Anchors>
                                       </uix:TargetAnchorable>
@@ -5965,10 +6110,10 @@
                                   </sap:WorkflowViewStateService.ViewState>
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_91" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V3">
                                     <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="24138548-2a45-448e-af07-d6035b228d97" DesignTimeRectangle="972, 620, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' parentid='create-app-details' tag='DIV' innertext='3' class='sc-226b651b-0 kgzsHg' aaname='' check:text='3' /&gt;" Guid="008211c8-ab45-4dce-8174-bef41404ae10" InformativeScreenshot="b1f0c57ac3c4e291a42cc3f994c0e5fa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                      <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="24138548-2a45-448e-af07-d6035b228d97" DesignTimeRectangle="972, 528, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' tag='DIV' innertext='3' class='sc-226b651b-0 kgzsHg' aaname='' check:text='3' /&gt;" Guid="008211c8-ab45-4dce-8174-bef41404ae10" ImageBase64="" InformativeScreenshot="ada53a28eba27cb13e0dd8a0e3386485.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                                         <uix:TargetAnchorable.Anchors>
-                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                            <uix:Target CVScreenId="24138548-2a45-448e-af07-d6035b228d97" DesignTimeRectangle="660, 620, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='სველი წერტილი' parentid='create-app-details' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='სველი წერტილი' /&gt;" Guid="69211a0c-ef01-4605-b067-15a0492ed34c" SearchSteps="FuzzySelector" />
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <uix:Target CVScreenId="24138548-2a45-448e-af07-d6035b228d97" DesignTimeRectangle="660, 528, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='სველი წერტილი' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='სველი წერტილი' /&gt;" Guid="69211a0c-ef01-4605-b067-15a0492ed34c" ImageBase64="" SearchSteps="FuzzySelector" />
                                           </scg:List>
                                         </uix:TargetAnchorable.Anchors>
                                       </uix:TargetAnchorable>
@@ -5994,10 +6139,10 @@
                             </sap:WorkflowViewStateService.ViewState>
                             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'სველი წერტილი'" sap:VirtualizedContainerService.HintSize="353.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_151" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V4">
                               <uix:NClick.Target>
-                                <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" DesignTimeRectangle="835, 819, 60, 60" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' parentid='create-app-details' tag='DIV' aaname='' check:innerText='1' /&gt;" Guid="6007fb58-9b3c-4170-9815-78d9d8878fc3" InformativeScreenshot="32ae79c6709ec4c3ae44416a3f15c275.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" DesignTimeRectangle="860, 528, 48, 48" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='sc-226b651b-0 kgzsHg' tag='DIV' aaname='' check:innerText='1' /&gt;" Guid="6007fb58-9b3c-4170-9815-78d9d8878fc3" ImageBase64="" InformativeScreenshot="281d77f00e40fee544324a6c5e8cb713.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                      <uix:Target DesignTimeRectangle="584, 819, 225, 60" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='სველი წერტილი' parentid='create-app-details' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='სველი წერტილი' /&gt;" Guid="211a2d01-a43b-435c-8d08-e0ab2923c532" SearchSteps="FuzzySelector" />
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target DesignTimeRectangle="660, 528, 180, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='სველი წერტილი' tag='SPAN' type='' class='sc-6e54cb25-19 cHrSsJ' check:innerText='სველი წერტილი' /&gt;" Guid="211a2d01-a43b-435c-8d08-e0ab2923c532" ImageBase64="" SearchSteps="FuzzySelector" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
                                 </uix:TargetAnchorable>
@@ -6953,16 +7098,16 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:DeleteFolderX>
-              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{LinksCurrentRow.Item(0).ToString,LinksCurrentRow.Item(1).ToString,Price,MyHome_ID,SS_ID,Phone,Location,Room,Floor,Space,DateTime.Today.ToString(&quot;dd-MM-yyyy&quot;),System.Text.RegularExpressions.Regex.Replace(Raion, &quot;რაიონი &quot;, &quot;&quot;)}]" DataTable="[ExtractDataTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="539.2,211.2" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
+              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{LinksCurrentRow.Item(0).ToString,LinksCurrentRow.Item(1).ToString,Price,MyHome_ID,SS_ID,Phone,Location,Room,Floor,Space,DateTime.Today.ToString(&quot;dd-MM-yyyy&quot;),System.Text.RegularExpressions.Regex.Replace(Raion, &quot;რაიონი &quot;, &quot;&quot;)}]" DataTable="[ExtractDataTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="539.2,48" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:AddDataRow>
             </Sequence>
-            <Sequence DisplayName="Write to Excel" sap:VirtualizedContainerService.HintSize="449.6,48" sap2010:WorkflowViewState.IdRef="Sequence_275">
+            <Sequence DisplayName="Write to Excel" sap:VirtualizedContainerService.HintSize="601.6,48" sap2010:WorkflowViewState.IdRef="Sequence_275">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -6976,12 +7121,12 @@
       </ui:ForEachRow.Body>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="545.6,48" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="449.6,48" sap2010:WorkflowViewState.IdRef="CommentOut_7">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,659.2" sap2010:WorkflowViewState.IdRef="Sequence_274">
           <sap:WorkflowViewStateService.ViewState>
