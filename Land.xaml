@@ -55,6 +55,7 @@
       <x:String>UiPath.GSuite.Activities.Contracts</x:String>
       <x:String>System.Activities.Runtime.Collections</x:String>
       <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -119,8 +120,15 @@
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
   <Sequence DisplayName="Land" sap:VirtualizedContainerService.HintSize="512,193.6" sap2010:WorkflowViewState.IdRef="Sequence_307">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="statusi" />
@@ -157,6 +165,7 @@
       <Variable x:TypeArguments="x:String" Name="ShesadzlebeliaGakopa" />
       <Variable x:TypeArguments="x:String" Name="Sainvesticio" />
       <Variable x:TypeArguments="x:String" Name="Bejebi" />
+      <Variable x:TypeArguments="x:String" Name="RegionSS" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -172,7 +181,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="387.2,117.6" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Keyboard to ENG&quot;]" />
-      <Assign sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="Assign_73">
+      <Assign sap:VirtualizedContainerService.HintSize="449.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_73">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[ImagesPath]</OutArgument>
         </Assign.To>
@@ -186,7 +195,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </Assign>
-      <ui:BuildDataTable DataTable="[ExtractDataTable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Column1&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Column2&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column3&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column4&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column5&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column6&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column7&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column8&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column9&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column10&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column11&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column12&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Column1&gt;ლინკი&lt;/Column1&gt;&#xA;    &lt;Column2&gt;კომენტარი&lt;/Column2&gt;&#xA;    &lt;Column3&gt;ფასი $&lt;/Column3&gt;&#xA;    &lt;Column4&gt;MyHome ID&lt;/Column4&gt;&#xA;    &lt;Column5&gt;SS ID&lt;/Column5&gt;&#xA;    &lt;Column6&gt;ტელეფონი&lt;/Column6&gt;&#xA;    &lt;Column7&gt;მისამართი&lt;/Column7&gt;&#xA;    &lt;Column8&gt;საკადასტრო&lt;/Column8&gt;&#xA;    &lt;Column9&gt;სტატუსი&lt;/Column9&gt;&#xA;    &lt;Column10&gt;ფართი&lt;/Column10&gt;&#xA;    &lt;Column11&gt;თარიღი&lt;/Column11&gt;&#xA;    &lt;Column12&gt;რაიონი&lt;/Column12&gt;&#xA;  &lt;/TableName&gt;&#xA;&lt;/NewDataSet&gt;">
+      <ui:BuildDataTable DataTable="[ExtractDataTable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="449.6,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Column1&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Column2&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column3&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column4&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column5&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column6&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column7&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column8&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column9&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column10&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column11&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column12&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;RegionSS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Column1&gt;ლინკი&lt;/Column1&gt;&#xA;    &lt;Column2&gt;კომენტარი&lt;/Column2&gt;&#xA;    &lt;Column3&gt;ფასი $&lt;/Column3&gt;&#xA;    &lt;Column4&gt;MyHome ID&lt;/Column4&gt;&#xA;    &lt;Column5&gt;SS ID&lt;/Column5&gt;&#xA;    &lt;Column6&gt;ტელეფონი&lt;/Column6&gt;&#xA;    &lt;Column7&gt;მისამართი&lt;/Column7&gt;&#xA;    &lt;Column8&gt;საკადასტრო&lt;/Column8&gt;&#xA;    &lt;Column9&gt;სტატუსი&lt;/Column9&gt;&#xA;    &lt;Column10&gt;ფართი&lt;/Column10&gt;&#xA;    &lt;Column11&gt;თარიღი&lt;/Column11&gt;&#xA;    &lt;Column12&gt;რაიონი&lt;/Column12&gt;&#xA;    &lt;RegionSS&gt;SS-ის რაიონი&lt;/RegionSS&gt;&#xA;  &lt;/TableName&gt;&#xA;&lt;/NewDataSet&gt;">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -194,7 +203,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:BuildDataTable>
-      <ui:BuildDataTable DataTable="[dt]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="BuildDataTable_4" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;_x0031_&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+      <ui:BuildDataTable DataTable="[dt]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="449.6,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_4" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;_x0031_&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -202,7 +211,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:BuildDataTable>
-      <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="C:\Users\99559\Desktop\MavenAgency.xlsx">
+      <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="449.6,353.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="C:\Users\99559\Desktop\MavenAgency.xlsx">
         <ui:ExcelApplicationScope.Body>
           <ActivityAction x:TypeArguments="ui:WorkbookApplication">
             <ActivityAction.Argument>
@@ -225,7 +234,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:ExcelApplicationScope>
-      <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[PathExists]" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="PathExists_2" Path="[ImagesPath]" PathType="Folder">
+      <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[PathExists]" sap:VirtualizedContainerService.HintSize="449.6,148" sap2010:WorkflowViewState.IdRef="PathExists_2" Path="[ImagesPath]" PathType="Folder">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -233,7 +242,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:PathExists>
-      <If Condition="[PathExists]" sap:VirtualizedContainerService.HintSize="387.2,48" sap2010:WorkflowViewState.IdRef="If_66">
+      <If Condition="[PathExists]" sap:VirtualizedContainerService.HintSize="449.6,459.2" sap2010:WorkflowViewState.IdRef="If_66">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -274,7 +283,7 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="LinksCurrentRow" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="574.4,760" sap2010:WorkflowViewState.IdRef="Sequence_609">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="574.4,703.2" sap2010:WorkflowViewState.IdRef="Sequence_609">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -338,7 +347,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <Sequence DisplayName="Process" sap:VirtualizedContainerService.HintSize="512,509.6" sap2010:WorkflowViewState.IdRef="Sequence_607">
+            <Sequence DisplayName="Process" sap:VirtualizedContainerService.HintSize="512,452.8" sap2010:WorkflowViewState.IdRef="Sequence_607">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -493,21 +502,13 @@
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:MultipleAssign>
               </Sequence>
-              <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_2" Path="[ImagesPath]">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </ui:CreateDirectory>
               <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Always" DisplayName="Use Browser Chrome" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="Simulate" OpenMode="Always" ScopeGuid="28c7bf54-feb7-4b70-94b0-b879708d00b1" Version="V2" WindowResize="Maximize">
                 <uix:NApplicationCard.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,594.4" sap2010:WorkflowViewState.IdRef="Sequence_308">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,880" sap2010:WorkflowViewState.IdRef="Sequence_308">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:String" Name="Images" />
                         <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="Link" />
@@ -518,6 +519,53 @@
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
+                      <uix:NCheckState DisplayName="Check App State 'განცხადება რომელსაც ეძე…'" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NCheckState_10" ScopeIdentifier="28c7bf54-feb7-4b70-94b0-b879708d00b1" Version="V4">
+                        <uix:NCheckState.IfExists>
+                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="512,416.8" sap2010:WorkflowViewState.IdRef="Sequence_634">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{LinksCurrentRow.Item(0).ToString,LinksCurrentRow.Item(1).ToString,Price,&quot;განცხადება წაშლილი ან არააქტიურია&quot;}]" DataTable="[ExtractDataTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="449.6,220" sap2010:WorkflowViewState.IdRef="AddDataRow_7">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:AddDataRow>
+                            <Sequence DisplayName="Write to Excel" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_633">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="387.2,139.2" sap2010:WorkflowViewState.IdRef="WriteRange_6" SheetName="Flat" WorkbookPath="C:\Users\99559\Desktop\MavenAgency.xlsx" />
+                            </Sequence>
+                            <ui:Continue sap:VirtualizedContainerService.HintSize="449.6,49.6" sap2010:WorkflowViewState.IdRef="Continue_8" />
+                          </Sequence>
+                        </uix:NCheckState.IfExists>
+                        <uix:NCheckState.IfNotExists>
+                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,106.4" sap2010:WorkflowViewState.IdRef="Sequence_635">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </uix:NCheckState.IfNotExists>
+                        <uix:NCheckState.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.myhome.ge/pr/19443482/iyideba-sasoflo-sameurneo-miwis-nakveti-vashlijvarshi/" DesignTimeRectangle="1057, 500, 392, 131" DesignTimeScaleFactor="0.8333333134651184" FullSelectorArgument="&lt;webctrl tag='DIV' innertext='განცხადება რომელსაც ეძებდით წაშლილი ან არააქტიურიამთავარი გვერდიმსგავსი განცხადებები' parentclass='flex flex-col items-center justify-between h-full gap-6 mx-8 my-12 md:flex-row md:my-24' /&gt;" Guid="a2318dcc-fdd9-461f-980a-0431c82b0572" InformativeScreenshot="5d2b65431c8f5edd3b980774a716e129.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი საქართველოში, ბინები, ყიდვა გაყიდვა გაქირავება - MyHome.ge' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                        </uix:NCheckState.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NCheckState>
                       <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ნომრის ნახვა" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_137" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="28c7bf54-feb7-4b70-94b0-b879708d00b1" Version="V4">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="https://www.myhome.ge/pr/19327502/iyideba-2-otaxiani-bina-didubeshi/" CVScreenId="6ded1933-8dee-49d0-8972-93930d06311e" DesignTimeRectangle="1247, 637, 211, 40" DesignTimeScaleFactor="0.8333333134651184" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' class='flex items-center justify-center w-full h-12 mt-5 text-sm text-center text-white transition-all rounded-lg bg-primary-100 font-tbcx-medium hover:bg-primary-90 active:bg-primary-110 disabled:bg-primary-70' parentclass='p-5 bg-white border rounded-2xl border-gray-20' idx='2' /&gt;" Guid="420b5204-cce4-4b7c-9daf-2c9df4ea79d5" InformativeScreenshot="d0223aad68d7e0c0412586294da63f0e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='იყიდება 2 ოთახიანი ბინა დიდუბეში' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
@@ -539,45 +587,6 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
-                      <uix:NCheckState DisplayName="Check App State 'მინდელის ქუჩა 7'" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="28c7bf54-feb7-4b70-94b0-b879708d00b1" Timeout="20" Version="V4">
-                        <uix:NCheckState.IfExists>
-                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,106.4" sap2010:WorkflowViewState.IdRef="Sequence_324">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                          </Sequence>
-                        </uix:NCheckState.IfExists>
-                        <uix:NCheckState.IfNotExists>
-                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,536" sap2010:WorkflowViewState.IdRef="Sequence_325">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{LinksCurrentRow.Item(0).ToString,LinksCurrentRow.Item(1).ToString,Price,&quot;განცხადება წაშლილია&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;}]" DataTable="[ExtractDataTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="387.2,220" sap2010:WorkflowViewState.IdRef="AddDataRow_4">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                            </ui:AddDataRow>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,176" sap2010:WorkflowViewState.IdRef="LogMessage_72" Level="Info" Message="[&quot;განცხადება წაშლილია&quot;]" />
-                            <ui:Continue sap:VirtualizedContainerService.HintSize="387.2,49.6" sap2010:WorkflowViewState.IdRef="Continue_5" />
-                          </Sequence>
-                        </uix:NCheckState.IfNotExists>
-                        <uix:NCheckState.Target>
-                          <uix:TargetAnchorable BrowserURL="https://www.myhome.ge/pr/19351952/iyideba-3-otaxiani-bina-saburtaloze/" CVScreenId="a7cb1873-f30a-4c32-8628-5c66412518c4" DesignTimeRectangle="463, 903, 729, 47" DesignTimeScaleFactor="0.8333333134651184" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='__next' tag='DIV' class='flex flex-col items-start' isleaf='0' parentclass='px-0 pt-0 pb-4 mt-5 bg-white md:border md:border-gray-20 rounded-2xl md:px-6 md:pt-5 md:pb-6' /&gt;" Guid="af7b5c15-6041-4034-8de5-755cb7433519" InformativeScreenshot="7cb5d76008ecbc3503b93b550b46a12e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='იყიდება 3 ოთახიანი ბინა საბურთალოზე' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                        </uix:NCheckState.Target>
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                      </uix:NCheckState>
                       <Sequence DisplayName="Get Images" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_309">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:String" Name="text" />
@@ -591,15 +600,23 @@
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:InterruptibleWhile Condition="[index&lt;13]" CurrentIndex="[index]" DisplayName="While" sap:VirtualizedContainerService.HintSize="644.8,1612" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+                        <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_2" Path="[ImagesPath]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:CreateDirectory>
+                        <ui:InterruptibleWhile Condition="[index&lt;13]" CurrentIndex="[index]" DisplayName="While" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
                           <ui:InterruptibleWhile.Body>
-                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="611.2,1465.6" sap2010:WorkflowViewState.IdRef="Sequence_332">
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="515.2,1004" sap2010:WorkflowViewState.IdRef="Sequence_332">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <If Condition="[index&lt;2]" sap:VirtualizedContainerService.HintSize="548.8,56.8" sap2010:WorkflowViewState.IdRef="If_68">
+                              <If Condition="[index&lt;1]" sap:VirtualizedContainerService.HintSize="452.8,56.8" sap2010:WorkflowViewState.IdRef="If_68">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -626,7 +643,7 @@
                                   </Sequence>
                                 </If.Else>
                               </If>
-                              <Assign sap:VirtualizedContainerService.HintSize="548.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_75">
+                              <Assign sap:VirtualizedContainerService.HintSize="452.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_75">
                                 <Assign.To>
                                   <OutArgument x:TypeArguments="x:String">[Src_index]</OutArgument>
                                 </Assign.To>
@@ -634,7 +651,7 @@
                                   <InArgument x:TypeArguments="x:String">[(index+1).ToString]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="548.8,1206.4" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="452.8,744.8" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -642,38 +659,27 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                                 <TryCatch.Try>
-                                  <Sequence sap:VirtualizedContainerService.HintSize="512,952" sap2010:WorkflowViewState.IdRef="Sequence_331">
+                                  <Sequence sap:VirtualizedContainerService.HintSize="416,490.4" sap2010:WorkflowViewState.IdRef="Sequence_331">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="src" DisplayName="Get Attribute 'IMG'" sap:VirtualizedContainerService.HintSize="449.6,240" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_3" Result="[text]" ScopeIdentifier="28c7bf54-feb7-4b70-94b0-b879708d00b1" Timeout="2" Version="V4">
-                                      <uix:NGetAttributeGeneric.Target>
-                                        <uix:TargetAnchorable BrowserURL="https://www.myhome.ge/pr/19267739/iyideba-2-otaxiani-bina-didubeshi/" CVScreenId="f294bc9e-e580-4efb-9dec-c3d1daac82e0" DesignTimeRectangle="442, 261, 771, 459" DesignTimeScaleFactor="0.8333333134651184" ElementType="Icon" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aaname='image' tag='IMG' idx='{0}' /&gt;&quot;, Src_index)]" Guid="e49526bd-71a3-4e8d-aa9d-8a7a0684eb34" InformativeScreenshot="7b6fc1bf830d5d1bc0deef65b7e7482d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' omit:title='იყიდება 2 ოთახიანი ბინა დიდუბეში' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                                      </uix:NGetAttributeGeneric.Target>
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                    </uix:NGetAttributeGeneric>
-                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_12">
+                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_21">
                                       <ui:CommentOut.Body>
-                                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,164.8" sap2010:WorkflowViewState.IdRef="Sequence_328">
+                                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,320" sap2010:WorkflowViewState.IdRef="Sequence_642">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="src" DisplayName="Get Attribute 'IMG'" sap:VirtualizedContainerService.HintSize="353.6,76" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_4" Result="[text]" ScopeIdentifier="93afbf93-3331-47ca-98bd-f8f85f52eb19" Timeout="2" Version="V4">
+                                          <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="src" DisplayName="Get Attribute 'IMG'" sap:VirtualizedContainerService.HintSize="353.6,231.2" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_3" Result="[text]" ScopeIdentifier="28c7bf54-feb7-4b70-94b0-b879708d00b1" Timeout="2" Version="V4">
                                             <uix:NGetAttributeGeneric.Target>
-                                              <uix:TargetAnchorable BrowserURL="https://www.myhome.ge/pr/19303287/iyideba-3-otaxiani-bina-did-dighomshi/" DesignTimeRectangle="442, 386, 771, 459" DesignTimeScaleFactor="0.8333333134651184" ElementType="Icon" FullSelectorArgument="&lt;webctrl aaname='image' parentid='__next' tag='IMG' /&gt;" Guid="d3ae3d99-2e50-43d8-a2aa-3d5caa354f51" InformativeScreenshot="32b97d7b6509393bd1893edd39bace97.png" ScopeSelectorArgument="&lt;html app='chrome.exe' omit:title='იყიდება 3 ოთახიანი ბინა დიდ დიღომში' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                              <uix:TargetAnchorable BrowserURL="https://www.myhome.ge/pr/19029950/iyideba-sasoflo-sameurneo-miwis-nakveti-sof-dighomshi/" DesignTimeRectangle="340, 774, 52, 49" DesignTimeScaleFactor="0.8333333134651184" ElementType="Icon" FullSelectorArgument="&lt;webctrl aaname='image' tag='IMG' idx='2' /&gt;" Guid="c0994c66-0492-4791-8619-3c9b33fb4856" ImageBase64="" InformativeScreenshot="7db43207ee7b8c5c564ece24ad0c42c5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='იყიდება სასოფლო-სამეურნეო მიწის ნაკვეთი სოფ. დიღომში' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                                             </uix:NGetAttributeGeneric.Target>
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
@@ -687,7 +693,52 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </ui:CommentOut>
-                                    <If Condition="[text.Contains(&quot;thumb&quot;)]" sap:VirtualizedContainerService.HintSize="449.6,566.4" sap2010:WorkflowViewState.IdRef="If_69">
+                                    <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="src" DisplayName="Get Attribute 'IMG'" sap:VirtualizedContainerService.HintSize="353.6,240" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_6" Result="[text]" ScopeIdentifier="28c7bf54-feb7-4b70-94b0-b879708d00b1" Timeout="2" Version="V4">
+                                      <uix:NGetAttributeGeneric.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://www.myhome.ge/pr/19267739/iyideba-2-otaxiani-bina-didubeshi/" CVScreenId="f294bc9e-e580-4efb-9dec-c3d1daac82e0" DesignTimeRectangle="442, 261, 771, 459" DesignTimeScaleFactor="0.8333333134651184" ElementType="Icon" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aaname='image' tag='IMG' idx='{0}' /&gt;&quot;, Src_index)]" Guid="e49526bd-71a3-4e8d-aa9d-8a7a0684eb34" InformativeScreenshot="7b6fc1bf830d5d1bc0deef65b7e7482d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' omit:title='იყიდება 2 ოთახიანი ბინა დიდუბეში' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                      </uix:NGetAttributeGeneric.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NGetAttributeGeneric>
+                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_12">
+                                      <ui:CommentOut.Body>
+                                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,320" sap2010:WorkflowViewState.IdRef="Sequence_328">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="src" DisplayName="Get Attribute 'IMG'" sap:VirtualizedContainerService.HintSize="353.6,231.2" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_4" Result="[text]" ScopeIdentifier="28c7bf54-feb7-4b70-94b0-b879708d00b1" Timeout="2" Version="V4">
+                                            <uix:NGetAttributeGeneric.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://www.myhome.ge/pr/19303287/iyideba-3-otaxiani-bina-did-dighomshi/" DesignTimeRectangle="442, 386, 771, 459" DesignTimeScaleFactor="0.8333333134651184" ElementType="Icon" FullSelectorArgument="&lt;webctrl aaname='image' parentid='__next' tag='IMG' /&gt;" Guid="d3ae3d99-2e50-43d8-a2aa-3d5caa354f51" InformativeScreenshot="32b97d7b6509393bd1893edd39bace97.png" ScopeSelectorArgument="&lt;html app='chrome.exe' omit:title='იყიდება 3 ოთახიანი ბინა დიდ დიღომში' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                            </uix:NGetAttributeGeneric.Target>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </uix:NGetAttributeGeneric>
+                                        </Sequence>
+                                      </ui:CommentOut.Body>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ui:CommentOut>
+                                    <If Condition="[text.Contains(&quot;thumb&quot;)]" sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="If_69">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
                                       <If.Then>
                                         <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,300" sap2010:WorkflowViewState.IdRef="Sequence_329">
                                           <sap:WorkflowViewStateService.ViewState>
@@ -711,7 +762,7 @@
                                   </Sequence>
                                 </TryCatch.Try>
                                 <TryCatch.Catches>
-                                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="515.2,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="419.2,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_2">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -730,12 +781,12 @@
                           </ui:InterruptibleWhile.Body>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:InterruptibleWhile>
-                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="644.8,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_13">
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_13">
                           <ui:CommentOut.Body>
                             <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,228" sap2010:WorkflowViewState.IdRef="Sequence_333">
                               <sap:WorkflowViewStateService.ViewState>
@@ -753,7 +804,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:CommentOut>
-                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="644.8,711.2" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
                           <ui:ForEachRow.Body>
                             <ActivityAction x:TypeArguments="sd:DataRow">
                               <ActivityAction.Argument>
@@ -795,12 +846,12 @@
                           </ui:ForEachRow.Body>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:ForEachRow>
-                        <ui:ClearDataTable DataTable="[dt]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="644.8,105.6" sap2010:WorkflowViewState.IdRef="ClearDataTable_2" />
+                        <ui:ClearDataTable DataTable="[dt]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="387.2,105.6" sap2010:WorkflowViewState.IdRef="ClearDataTable_2" />
                       </Sequence>
                       <Sequence DisplayName="Location Sakadastro //Price" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_336">
                         <sap:WorkflowViewStateService.ViewState>
@@ -809,7 +860,7 @@
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_14">
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="952,699.2" sap2010:WorkflowViewState.IdRef="CommentOut_14">
                           <ui:CommentOut.Body>
                             <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,588.8" sap2010:WorkflowViewState.IdRef="Sequence_334">
                               <sap:WorkflowViewStateService.ViewState>
@@ -848,15 +899,15 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:CommentOut>
-                        <uix:NCheckState DisplayName="Check App State 'ს/კ:81.2********კოდის ნ…'" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="NCheckState_9" ScopeIdentifier="28c7bf54-feb7-4b70-94b0-b879708d00b1" Version="V4">
+                        <uix:NCheckState DisplayName="Check App State 'ს/კ:81.2********კოდის ნ…'" sap:VirtualizedContainerService.HintSize="952,748.8" sap2010:WorkflowViewState.IdRef="NCheckState_9" ScopeIdentifier="28c7bf54-feb7-4b70-94b0-b879708d00b1" Version="V4">
                           <uix:NCheckState.IfExists>
-                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,307.2" sap2010:WorkflowViewState.IdRef="Sequence_612">
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,498.4" sap2010:WorkflowViewState.IdRef="Sequence_612">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ს/კ:81.2********კოდის ნ…'" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NClick_273" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="28c7bf54-feb7-4b70-94b0-b879708d00b1" Version="V4">
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ს/კ:81.2********კოდის ნ…'" sap:VirtualizedContainerService.HintSize="387.2,225.6" sap2010:WorkflowViewState.IdRef="NClick_273" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="28c7bf54-feb7-4b70-94b0-b879708d00b1" Version="V4">
                                 <uix:NClick.Target>
                                   <uix:TargetAnchorable BrowserURL="https://www.myhome.ge/pr/19325118/iyideba-sasoflo-sameurneo-miwis-nakveti-chughuretshi/" CVScreenId="e0c4f413-c0a6-4bf7-ae3f-64f8d349d7f1" DesignTimeRectangle="463, 831, 202, 33" DesignTimeScaleFactor="0.8333333134651184" FullSelectorArgument="&lt;webctrl aaname='ს/კ:' parentid='__next' tag='SPAN' parentclass='flex flex-col items-start' /&gt;" Guid="0e9514ab-2ba9-46f7-8fba-c997be40d84e" InformativeScreenshot="65a30643889c36fde5da912cf0789591.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='იყიდება სასოფლო-სამეურნეო მიწის ნაკვეთი ჩუღურეთში' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                                 </uix:NClick.Target>
@@ -871,10 +922,21 @@
                                   </uix:VerifyExecutionOptions>
                                 </uix:NClick.VerifyOptions>
                               </uix:NClick>
+                              <uix:NGetText DisplayName="Get Text 'ს/კ:81.21.09.119'" sap:VirtualizedContainerService.HintSize="387.2,182.4" sap2010:WorkflowViewState.IdRef="NGetText_25" ScopeIdentifier="28c7bf54-feb7-4b70-94b0-b879708d00b1" TextString="[Sakadastro]" Version="V4">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://www.myhome.ge/pr/19325118/iyideba-sasoflo-sameurneo-miwis-nakveti-chughuretshi/" CVScreenId="12776c6a-0cc6-454e-843b-c2f8f3c69eff" DesignTimeRectangle="463, 831, 126, 33" DesignTimeScaleFactor="0.8333333134651184" FullSelectorArgument="&lt;webctrl aaname='ს/კ:' parentid='__next' tag='SPAN' parentclass='flex flex-col items-start' /&gt;" Guid="c0748916-7fba-4a09-84f4-69d133228437" ImageBase64="" InformativeScreenshot="4906221b6ad2316ad9b3a8bf5e2327a6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='იყიდება სასოფლო-სამეურნეო მიწის ნაკვეთი ჩუღურეთში' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                </uix:NGetText.Target>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NGetText>
                             </Sequence>
                           </uix:NCheckState.IfExists>
                           <uix:NCheckState.IfNotExists>
-                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,257.6" sap2010:WorkflowViewState.IdRef="Sequence_613">
+                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,259.2" sap2010:WorkflowViewState.IdRef="Sequence_613">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -893,18 +955,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NCheckState>
-                        <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'ს/კ:81.21.09.119'" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="NGetText_25" ScopeIdentifier="28c7bf54-feb7-4b70-94b0-b879708d00b1" TextString="[Sakadastro]" Timeout="3" Version="V4">
-                          <uix:NGetText.Target>
-                            <uix:TargetAnchorable BrowserURL="https://www.myhome.ge/pr/19325118/iyideba-sasoflo-sameurneo-miwis-nakveti-chughuretshi/" CVScreenId="12776c6a-0cc6-454e-843b-c2f8f3c69eff" DesignTimeRectangle="463, 831, 126, 33" DesignTimeScaleFactor="0.8333333134651184" FullSelectorArgument="&lt;webctrl aaname='ს/კ:' parentid='__next' tag='SPAN' parentclass='flex flex-col items-start' /&gt;" Guid="c0748916-7fba-4a09-84f4-69d133228437" ImageBase64="" InformativeScreenshot="4906221b6ad2316ad9b3a8bf5e2327a6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='იყიდება სასოფლო-სამეურნეო მიწის ნაკვეთი ჩუღურეთში' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                          </uix:NGetText.Target>
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                        </uix:NGetText>
-                        <If Condition="[String.IsNullOrWhiteSpace(Sakadastro)]" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="If_137">
+                        <If Condition="[String.IsNullOrWhiteSpace(Sakadastro)]" sap:VirtualizedContainerService.HintSize="952,557.6" sap2010:WorkflowViewState.IdRef="If_137">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -912,12 +963,20 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <If.Then>
-                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_629">
+                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_629">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_150">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[Sakadastro]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">საკადასტროს გარეშე</InArgument>
+                                </Assign.Value>
+                              </Assign>
                             </Sequence>
                           </If.Then>
                           <If.Else>
@@ -932,18 +991,38 @@
                                   <OutArgument x:TypeArguments="x:String">[Sakadastro]</OutArgument>
                                 </Assign.To>
                                 <Assign.Value>
-                                  <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(Sakadastro, "ს/კ: ", "")]</InArgument>
+                                  <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(Sakadastro, "ს/კ:", "")]</InArgument>
                                 </Assign.Value>
                               </Assign>
                             </Sequence>
                           </If.Else>
                         </If>
-                        <uix:NGetText DisplayName="Get Text 'მირიან მეფის ქ.'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NGetText_14" ScopeIdentifier="28c7bf54-feb7-4b70-94b0-b879708d00b1" TextString="[Location]" Version="V3">
+                        <uix:NGetText DisplayName="Get Text 'მირიან მეფის ქ.'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NGetText_14" ScopeIdentifier="28c7bf54-feb7-4b70-94b0-b879708d00b1" TextString="[Location]" Version="V3">
                           <uix:NGetText.Target>
                             <uix:TargetAnchorable BrowserURL="https://www.myhome.ge/pr/19102076/iyideba-3-otaxiani-bina-did-dighomshi/" DesignTimeRectangle="463, 725, 729, 23" DesignTimeScaleFactor="0.8333333134651184" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='__next' tag='DIV' class='flex flex-col items-start' isleaf='0' parentclass='px-0 pt-0 pb-4 mt-5 bg-white md:border md:border-gray-20 rounded-2xl md:px-6 md:pt-5 md:pb-6' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='__next' tag='DIV' class='flex flex-col items-start' isleaf='0' parentclass='px-0 pt-0 pb-4 mt-5 bg-white md:border md:border-gray-20 rounded-2xl md:px-6 md:pt-5 md:pb-6' aaname='' /&gt;" Guid="5d54c8f9-fa8b-4bcf-b7f8-467fa05c8f7f" ImageBase64="" InformativeScreenshot="09bd2cb19a2e1459bdca8bbacaf2c955.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='იყიდება 3 ოთახიანი ბინა დიდ დიღომში' /&gt;" SearchSteps="Selector" Version="V4" />
                           </uix:NGetText.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
                         </uix:NGetText>
-                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="387.2,49.6" sap2010:WorkflowViewState.IdRef="CommentOut_15">
+                        <Assign sap:VirtualizedContainerService.HintSize="952,114.4" sap2010:WorkflowViewState.IdRef="Assign_151">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Location]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(Location, "ს/კ:.*", "")]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="952,275.2" sap2010:WorkflowViewState.IdRef="CommentOut_15">
                           <ui:CommentOut.Body>
                             <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,172" sap2010:WorkflowViewState.IdRef="Sequence_335">
                               <sap:WorkflowViewStateService.ViewState>
@@ -969,7 +1048,7 @@
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NGetText DisplayName="Get Text 'General'" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="NGetText_15" ScopeIdentifier="28c7bf54-feb7-4b70-94b0-b879708d00b1" TextString="[General]" Version="V3">
+                        <uix:NGetText DisplayName="Get Text 'General'" sap:VirtualizedContainerService.HintSize="529.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_15" ScopeIdentifier="28c7bf54-feb7-4b70-94b0-b879708d00b1" TextString="[General]" Version="V3">
                           <uix:NGetText.Target>
                             <uix:TargetAnchorable BrowserURL="https://www.myhome.ge/pr/18599130/iyideba-3-otaxiani-bina-saburtaloze/" DesignTimeRectangle="215, 773, 1094, 130" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='10' parentid='__next' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='items-center flex-wrap border border-gray-20 rounded-xl p-5 md:p-6 lg:p-8 mt-0 md:mt-4 justify-between grid grid-cols-2 md:grid-cols-4 gap-3' parentid='__next' tag='DIV' aaname='' /&gt;" Guid="50530207-e28a-403b-9235-613b33f09aef" InformativeScreenshot="63387f8c61c37fbf02b2d55fd138ee8b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='იყიდება 3 ოთახიანი ბინა საბურთალოზე' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
                           </uix:NGetText.Target>
@@ -980,7 +1059,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NGetText>
-                        <If Condition="[General.Contains(Space)]" sap:VirtualizedContainerService.HintSize="387.2,49.6" sap2010:WorkflowViewState.IdRef="If_70">
+                        <If Condition="[General.Contains(Space)]" sap:VirtualizedContainerService.HintSize="529.6,667.2" sap2010:WorkflowViewState.IdRef="If_70">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1040,14 +1119,14 @@
                           </uix:NGetText.Target>
                         </uix:NGetText>
                       </Sequence>
-                      <Sequence DisplayName="Detailed" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_397">
+                      <Sequence DisplayName="Detailed" sap:VirtualizedContainerService.HintSize="449.6,342.4" sap2010:WorkflowViewState.IdRef="Sequence_397">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NGetText DisplayName="Get Text 'Detailed'" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="NGetText_16" ScopeIdentifier="28c7bf54-feb7-4b70-94b0-b879708d00b1" TextString="[Detailed]" Version="V3">
+                        <uix:NGetText DisplayName="Get Text 'Detailed'" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="NGetText_16" ScopeIdentifier="28c7bf54-feb7-4b70-94b0-b879708d00b1" TextString="[Detailed]" Version="V3">
                           <uix:NGetText.Target>
                             <uix:TargetAnchorable BrowserURL="https://www.myhome.ge/pr/18599130/iyideba-3-otaxiani-bina-saburtaloze/" DesignTimeRectangle="215, 424, 1084, 520" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='13' parentid='__next' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 overflow-hidden max-h-full' parentid='__next' tag='DIV' aaname='' /&gt;" Guid="8c891055-ab61-4ee6-8f5e-1c40b7248ca5" InformativeScreenshot="b2187c381d52e562babfe8f608aa150b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='იყიდება 3 ოთახიანი ბინა საბურთალოზე' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                               <uix:TargetAnchorable.Anchors>
@@ -1064,7 +1143,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NGetText>
-                        <ui:IfElseIfV2 Condition="[Detailed.Contains(&quot;სასოფლო-სამეურნეო&quot;)]" DisplayName="Else If  სტატუსი" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_18">
+                        <ui:IfElseIfV2 Condition="[Detailed.Contains(&quot;სასოფლო-სამეურნეო&quot;)]" DisplayName="Else If  სტატუსი" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_18">
                           <ui:IfElseIfV2.Else>
                             <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_345">
                               <sap:WorkflowViewStateService.ViewState>
@@ -1076,7 +1155,7 @@
                           </ui:IfElseIfV2.Else>
                           <ui:IfElseIfV2.ElseIfs>
                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
-                              <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Detailed.Contains(&quot;არა სასოფლო-სამეურნეო&quot;)]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_96">
+                              <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Detailed.Contains(&quot;არასასოფლო&quot;)]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_96">
                                 <ui:IfElseIfBlock.Then>
                                   <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_343">
                                     <sap:WorkflowViewStateService.ViewState>
@@ -1197,7 +1276,7 @@
                             </Sequence>
                           </ui:IfElseIfV2.Then>
                         </ui:IfElseIfV2>
-                        <uix:NGetText DisplayName="Get Text 'Description'" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_17" ScopeIdentifier="28c7bf54-feb7-4b70-94b0-b879708d00b1" TextString="[Description]" Version="V3">
+                        <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'Description'" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="NGetText_17" ScopeIdentifier="28c7bf54-feb7-4b70-94b0-b879708d00b1" TextString="[Description]" Timeout="5" Version="V3">
                           <uix:NGetText.Target>
                             <uix:TargetAnchorable BrowserURL="https://www.myhome.ge/pr/18599130/iyideba-3-otaxiani-bina-saburtaloze/" DesignTimeRectangle="215, 507, 1094, 275" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='text-container' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='text-container' tag='DIV' type='' class='text-sm leading-[22px]' /&gt;" Guid="1e0c517f-e58d-4bac-a516-ce54f7236a0a" InformativeScreenshot="6538f16a626205221a956b8542638333.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='იყიდება 3 ოთახიანი ბინა საბურთალოზე' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                               <uix:TargetAnchorable.Anchors>
@@ -1207,14 +1286,26 @@
                               </uix:TargetAnchorable.Anchors>
                             </uix:TargetAnchorable>
                           </uix:NGetText.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
                         </uix:NGetText>
-                        <Assign sap:VirtualizedContainerService.HintSize="433.6,107.2" sap2010:WorkflowViewState.IdRef="Assign_141">
+                        <Assign sap:VirtualizedContainerService.HintSize="387.2,49.6" sap2010:WorkflowViewState.IdRef="Assign_141">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[Description]</OutArgument>
                           </Assign.To>
                           <Assign.Value>
                             <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(Description, "(?&lt;![a-z])(\d{3}[\s.-]?\d{2}[\s.-]?\d{2}[\s.-]?\d{2}|\d{3}[\s.-]?\d{3}[\s.-]?\d{2}|\d{9}|\d{5}[\s.-]?\d{2}[\s.-]?\d{2})(?![a-z])", "")]</InArgument>
                           </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
                         </Assign>
                       </Sequence>
                       <uix:NGetText DisplayName="Get Text Phone" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NGetText_20" ScopeIdentifier="28c7bf54-feb7-4b70-94b0-b879708d00b1" TextString="[Phone]" Version="V4">
@@ -1266,7 +1357,7 @@
                   </ActivityAction>
                 </uix:NApplicationCard.Body>
                 <uix:NApplicationCard.TargetApp>
-                  <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="29cf14dc3c546e99ef8cf998b550b278.jpg" Selector="&lt;html app='chrome.exe' url='https://www.myhome.ge/pr/19282057/iyideba-3-otaxiani-bina-nutsubidzis-ferdobze/' /&gt;" Title="იყიდება 3 ოთახიანი ბინა საბურთალოზე" Url="[LinksCurrentRow(0).ToString()]" />
+                  <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="29cf14dc3c546e99ef8cf998b550b278.jpg" Selector="&lt;html app='chrome.exe' omit:url='https://www.myhome.ge/pr/19282057/iyideba-3-otaxiani-bina-nutsubidzis-ferdobze/' /&gt;" Title="იყიდება 3 ოთახიანი ბინა საბურთალოზე" Url="[LinksCurrentRow(0).ToString()]" />
                 </uix:NApplicationCard.TargetApp>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1281,7 +1372,7 @@
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1389.6" sap2010:WorkflowViewState.IdRef="Sequence_524">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1446.4" sap2010:WorkflowViewState.IdRef="Sequence_524">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1473,83 +1564,130 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
-                      <Sequence DisplayName="Images Window" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_445">
+                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Open" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" ScopeGuid="296186fa-e0ab-41f5-9e41-0d0ca31e661d" Version="V2">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,739.2" sap2010:WorkflowViewState.IdRef="Sequence_638">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'Edit'" EmptyField="True" sap:VirtualizedContainerService.HintSize="353.6,188" sap2010:WorkflowViewState.IdRef="TypeInto_6" SendWindowMessages="False" SimulateType="False" Text="[ImagesPath]">
+                                <ui:TypeInto.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1e8c43d4-48a1-47f8-bd4e-f444c4b0d835" InformativeScreenshot="7f7f57e765f2e977702aa4438a6632c1" Selector="&lt;wnd app='chrome.exe' cls='#*' title='Open' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd aaname='File name:' aastate='collapsed, focusable' cls='ComboBox' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:TypeInto.Target>
+                              </ui:TypeInto>
+                              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="353.6,139.2" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="65a11d26-b408-4bd9-9272-c5f6492998e5" InformativeScreenshot="b9f6710dc8276126837b054858b4efb1" Selector="&lt;wnd app='chrome.exe' cls='#*' title='Open' /&gt;&lt;wnd aaname='Open' cls='Button' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:Click.Target>
+                              </ui:Click>
+                              <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'DirectUIHWND'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="SendHotkey_15" Key="a" KeyModifiers="Ctrl">
+                                <ui:SendHotkey.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3c446694-b16a-4a87-9794-7026428f5ae4" InformativeScreenshot="9530ff0aa16e5a1462ce1bb6f3732748" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd ctrlid='1121' title='ShellView' /&gt;&lt;wnd aaname='Items View' cls='DirectUIHWND' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:SendHotkey.Target>
+                              </ui:SendHotkey>
+                              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="353.6,132" sap2010:WorkflowViewState.IdRef="Click_10" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="65a11d26-b408-4bd9-9272-c5f6492998e5" InformativeScreenshot="b9f6710dc8276126837b054858b4efb1" Selector="&lt;wnd app='chrome.exe' cls='#*' title='Open' /&gt;&lt;wnd aaname='Open' cls='Button' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:Click.Target>
+                              </ui:Click>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="0, 0, 1633, 743" FilePath="[ImagesPath]" IconBase64="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" InformativeScreenshot="ce2cdfa87a0acbaaa02f7f35d6afaf9b.png" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" Title="Open" />
+                        </uix:NApplicationCard.TargetApp>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="387.2,117.6" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[ImagesPath]" />
-                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="1" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="387.2,188" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="[ImagesPath]">
-                          <ui:TypeInto.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1e8c43d4-48a1-47f8-bd4e-f444c4b0d835" InformativeScreenshot="7f7f57e765f2e977702aa4438a6632c1" Selector="&lt;wnd app='chrome.exe' cls='#*' title='Open' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd aaname='File name:' aastate='collapsed, focusable' cls='ComboBox' /&gt;">
-                              <ui:Target.TimeoutMS>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:Target.TimeoutMS>
-                              <ui:Target.WaitForReady>
-                                <InArgument x:TypeArguments="ui:WaitForReady" />
-                              </ui:Target.WaitForReady>
-                            </ui:Target>
-                          </ui:TypeInto.Target>
-                        </ui:TypeInto>
-                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="387.2,139.2" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
-                          <ui:Click.CursorPosition>
-                            <ui:CursorPosition Position="Center">
-                              <ui:CursorPosition.OffsetX>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:CursorPosition.OffsetX>
-                              <ui:CursorPosition.OffsetY>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:CursorPosition.OffsetY>
-                            </ui:CursorPosition>
-                          </ui:Click.CursorPosition>
-                          <ui:Click.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="65a11d26-b408-4bd9-9272-c5f6492998e5" InformativeScreenshot="b9f6710dc8276126837b054858b4efb1" Selector="&lt;wnd app='chrome.exe' cls='#*' title='Open' /&gt;&lt;wnd aaname='Open' cls='Button' /&gt;">
-                              <ui:Target.TimeoutMS>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:Target.TimeoutMS>
-                              <ui:Target.WaitForReady>
-                                <InArgument x:TypeArguments="ui:WaitForReady" />
-                              </ui:Target.WaitForReady>
-                            </ui:Target>
-                          </ui:Click.Target>
-                        </ui:Click>
-                        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'DirectUIHWND'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="SendHotkey_8" Key="a" KeyModifiers="Ctrl">
-                          <ui:SendHotkey.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3c446694-b16a-4a87-9794-7026428f5ae4" InformativeScreenshot="9530ff0aa16e5a1462ce1bb6f3732748" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd ctrlid='1121' title='ShellView' /&gt;&lt;wnd aaname='Items View' cls='DirectUIHWND' /&gt;">
-                              <ui:Target.TimeoutMS>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:Target.TimeoutMS>
-                              <ui:Target.WaitForReady>
-                                <InArgument x:TypeArguments="ui:WaitForReady" />
-                              </ui:Target.WaitForReady>
-                            </ui:Target>
-                          </ui:SendHotkey.Target>
-                        </ui:SendHotkey>
-                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="387.2,132" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
-                          <ui:Click.CursorPosition>
-                            <ui:CursorPosition Position="Center">
-                              <ui:CursorPosition.OffsetX>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:CursorPosition.OffsetX>
-                              <ui:CursorPosition.OffsetY>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:CursorPosition.OffsetY>
-                            </ui:CursorPosition>
-                          </ui:Click.CursorPosition>
-                          <ui:Click.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="65a11d26-b408-4bd9-9272-c5f6492998e5" InformativeScreenshot="b9f6710dc8276126837b054858b4efb1" Selector="&lt;wnd app='chrome.exe' cls='#*' title='Open' /&gt;&lt;wnd aaname='Open' cls='Button' /&gt;">
-                              <ui:Target.TimeoutMS>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:Target.TimeoutMS>
-                              <ui:Target.WaitForReady>
-                                <InArgument x:TypeArguments="ui:WaitForReady" />
-                              </ui:Target.WaitForReady>
-                            </ui:Target>
-                          </ui:Click.Target>
-                        </ui:Click>
-                      </Sequence>
+                      </uix:NApplicationCard>
+                      <If Condition="[Sakadastro &lt;&gt; &quot;საკადასტროს გარეშე&quot;]" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="If_139">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,330.4" sap2010:WorkflowViewState.IdRef="Sequence_636">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'საკადასტრო კოდი'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,241.6" sap2010:WorkflowViewState.IdRef="NTypeInto_41" ScopeIdentifier="691d10dd-c444-42ee-aea1-071c9dc9a4a4" Text="[Sakadastro]" Version="V4">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://statements.tnet.ge/ka/statement/create?referrer=myhome" CVScreenId="e7d95a1d-caed-47de-85e6-332cf39c6ec2" DesignTimeRectangle="604, 634, 998, 51" DesignTimeScaleFactor="0.9375" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' innertext='საკადასტრო კოდი ' parentclass='input-container luk-bg-white luk-relative luk-flex luk-h-12 md:luk-h-14 luk-cursor-text luk-items-end luk-overflow-hidden luk-border-gray-40 luk-rounded-lg luk-border focus-within:luk-border-black-100 luk-w-full' /&gt;" Guid="0e1a975a-a9ad-4646-aedf-105de7dd0d8f" InformativeScreenshot="037916ef5a56297eedeb2a266fa07e0b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_637">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
                       <Sequence DisplayName="Maxasiateblebi" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_477">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -2016,7 +2154,7 @@
                             </Sequence>
                           </If.Else>
                         </If>
-                        <If Condition="[Bejebi.Contains(Sainvesticio)]" DisplayName="If Sainvesticio" sap:VirtualizedContainerService.HintSize="387.2,48" sap2010:WorkflowViewState.IdRef="If_132">
+                        <If Condition="[Bejebi.Contains(Sainvesticio)]" DisplayName="If Sainvesticio" sap:VirtualizedContainerService.HintSize="387.2,49.6" sap2010:WorkflowViewState.IdRef="If_132">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2241,13 +2379,13 @@
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1785.6" sap2010:WorkflowViewState.IdRef="Sequence_606">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1389.6" sap2010:WorkflowViewState.IdRef="Sequence_606">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NCheckState DisplayName="Check App State 'დაამატე ახალი განცხადება'" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="NCheckState_7" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Timeout="3" Version="V4">
+                      <uix:NCheckState DisplayName="Check App State 'დაამატე ახალი განცხადება'" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NCheckState_7" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Timeout="3" Version="V4">
                         <uix:NCheckState.IfExists>
                           <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,308.8" sap2010:WorkflowViewState.IdRef="Sequence_525">
                             <sap:WorkflowViewStateService.ViewState>
@@ -2291,7 +2429,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NCheckState>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="1" DisplayName="Click 'ბინა'" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="NClick_206" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V4">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="1" DisplayName="Click 'ბინა'" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_206" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V4">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="c8bc6deb-a77c-4778-babc-c5889871a2e2" DesignTimeRectangle="660, 785, 191, 100" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='DIV' innertext='მიწის ნაკვეთი' parentclass='sc-f90a41ca-2 gvhrwu' /&gt;" Guid="29e60ed4-1a55-4c8f-b25d-ee1e15f863e9" InformativeScreenshot="6b54b468b1fd0d33389aa67f50d9bf7f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                         </uix:NClick.Target>
@@ -2312,7 +2450,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'იყიდება'" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="NClick_207" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V4">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'იყიდება'" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_207" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V4">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="1b8b8f0c-fc5e-4a8d-84c0-b49d3f3e374b" DesignTimeRectangle="678, 662, 180, 94" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-f90a41ca-3 gOmehI' innertext='იყიდება' /&gt;" Guid="f70f9d47-68f2-46fc-9a11-35095b13181f" InformativeScreenshot="01f1e5b47087b37b7baaac0fe2078415.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                         </uix:NClick.Target>
@@ -2333,7 +2471,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="3" DisplayName="Click 'ასატვირთად დააჭირეთ ან …'" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="NClick_208" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V4">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="3" DisplayName="Click 'ასატვირთად დააჭირეთ ან …'" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_208" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V4">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="db9c3ab9-46f4-49c4-ab01-c5522343cd41" DesignTimeRectangle="678, 531, 561, 184" DesignTimeScaleFactor="0.9375" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-8e765712-1 lgjkBz' innertext='ასატვირთად დააჭირეთ ან გადმოთრევით ჩააგდეთ აქ.' /&gt;" Guid="0e87774e-77a8-4129-bad2-b02acff9dd74" InformativeScreenshot="c25e8dd72708d9ebc285931a440018d4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                         </uix:NClick.Target>
@@ -2354,83 +2492,100 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
-                      <Sequence DisplayName="Images Window" sap:VirtualizedContainerService.HintSize="449.6,115.2" sap2010:WorkflowViewState.IdRef="Sequence_528">
+                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Open" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_9" ScopeGuid="296186fa-e0ab-41f5-9e41-0d0ca31e661d" Version="V2">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,739.2" sap2010:WorkflowViewState.IdRef="Sequence_639">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'Edit'" EmptyField="True" sap:VirtualizedContainerService.HintSize="353.6,188" sap2010:WorkflowViewState.IdRef="TypeInto_7" SendWindowMessages="False" SimulateType="False" Text="[ImagesPath]">
+                                <ui:TypeInto.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1e8c43d4-48a1-47f8-bd4e-f444c4b0d835" InformativeScreenshot="7f7f57e765f2e977702aa4438a6632c1" Selector="&lt;wnd app='chrome.exe' cls='#*' title='Open' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd aaname='File name:' aastate='collapsed, focusable' cls='ComboBox' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:TypeInto.Target>
+                              </ui:TypeInto>
+                              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="353.6,139.2" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="65a11d26-b408-4bd9-9272-c5f6492998e5" InformativeScreenshot="b9f6710dc8276126837b054858b4efb1" Selector="&lt;wnd app='chrome.exe' cls='#*' title='Open' /&gt;&lt;wnd aaname='Open' cls='Button' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:Click.Target>
+                              </ui:Click>
+                              <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'DirectUIHWND'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="SendHotkey_16" Key="a" KeyModifiers="Ctrl">
+                                <ui:SendHotkey.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3c446694-b16a-4a87-9794-7026428f5ae4" InformativeScreenshot="9530ff0aa16e5a1462ce1bb6f3732748" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd ctrlid='1121' title='ShellView' /&gt;&lt;wnd aaname='Items View' cls='DirectUIHWND' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:SendHotkey.Target>
+                              </ui:SendHotkey>
+                              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="353.6,132" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="65a11d26-b408-4bd9-9272-c5f6492998e5" InformativeScreenshot="b9f6710dc8276126837b054858b4efb1" Selector="&lt;wnd app='chrome.exe' cls='#*' title='Open' /&gt;&lt;wnd aaname='Open' cls='Button' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:Click.Target>
+                              </ui:Click>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="0, 0, 1633, 743" FilePath="[ImagesPath]" IconBase64="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" InformativeScreenshot="ce2cdfa87a0acbaaa02f7f35d6afaf9b.png" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" Title="Open" />
+                        </uix:NApplicationCard.TargetApp>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="387.2,188" sap2010:WorkflowViewState.IdRef="TypeInto_4" Text="[ImagesPath]">
-                          <ui:TypeInto.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1e8c43d4-48a1-47f8-bd4e-f444c4b0d835" InformativeScreenshot="7f7f57e765f2e977702aa4438a6632c1" Selector="&lt;wnd app='chrome.exe' cls='#*' title='Open' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd aaname='File name:' aastate='collapsed, focusable' cls='ComboBox' /&gt;">
-                              <ui:Target.TimeoutMS>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:Target.TimeoutMS>
-                              <ui:Target.WaitForReady>
-                                <InArgument x:TypeArguments="ui:WaitForReady" />
-                              </ui:Target.WaitForReady>
-                            </ui:Target>
-                          </ui:TypeInto.Target>
-                        </ui:TypeInto>
-                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="387.2,139.2" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT">
-                          <ui:Click.CursorPosition>
-                            <ui:CursorPosition Position="Center">
-                              <ui:CursorPosition.OffsetX>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:CursorPosition.OffsetX>
-                              <ui:CursorPosition.OffsetY>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:CursorPosition.OffsetY>
-                            </ui:CursorPosition>
-                          </ui:Click.CursorPosition>
-                          <ui:Click.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="65a11d26-b408-4bd9-9272-c5f6492998e5" InformativeScreenshot="b9f6710dc8276126837b054858b4efb1" Selector="&lt;wnd app='chrome.exe' cls='#*' title='Open' /&gt;&lt;wnd aaname='Open' cls='Button' /&gt;">
-                              <ui:Target.TimeoutMS>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:Target.TimeoutMS>
-                              <ui:Target.WaitForReady>
-                                <InArgument x:TypeArguments="ui:WaitForReady" />
-                              </ui:Target.WaitForReady>
-                            </ui:Target>
-                          </ui:Click.Target>
-                        </ui:Click>
-                        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'DirectUIHWND'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="SendHotkey_9" Key="a" KeyModifiers="Ctrl">
-                          <ui:SendHotkey.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3c446694-b16a-4a87-9794-7026428f5ae4" InformativeScreenshot="9530ff0aa16e5a1462ce1bb6f3732748" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd ctrlid='1121' title='ShellView' /&gt;&lt;wnd aaname='Items View' cls='DirectUIHWND' /&gt;">
-                              <ui:Target.TimeoutMS>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:Target.TimeoutMS>
-                              <ui:Target.WaitForReady>
-                                <InArgument x:TypeArguments="ui:WaitForReady" />
-                              </ui:Target.WaitForReady>
-                            </ui:Target>
-                          </ui:SendHotkey.Target>
-                        </ui:SendHotkey>
-                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="387.2,132" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT">
-                          <ui:Click.CursorPosition>
-                            <ui:CursorPosition Position="Center">
-                              <ui:CursorPosition.OffsetX>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:CursorPosition.OffsetX>
-                              <ui:CursorPosition.OffsetY>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:CursorPosition.OffsetY>
-                            </ui:CursorPosition>
-                          </ui:Click.CursorPosition>
-                          <ui:Click.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="65a11d26-b408-4bd9-9272-c5f6492998e5" InformativeScreenshot="b9f6710dc8276126837b054858b4efb1" Selector="&lt;wnd app='chrome.exe' cls='#*' title='Open' /&gt;&lt;wnd aaname='Open' cls='Button' /&gt;">
-                              <ui:Target.TimeoutMS>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:Target.TimeoutMS>
-                              <ui:Target.WaitForReady>
-                                <InArgument x:TypeArguments="ui:WaitForReady" />
-                              </ui:Target.WaitForReady>
-                            </ui:Target>
-                          </ui:Click.Target>
-                        </ui:Click>
-                      </Sequence>
-                      <Sequence DisplayName="Location" sap:VirtualizedContainerService.HintSize="449.6,115.2" sap2010:WorkflowViewState.IdRef="Sequence_316">
+                      </uix:NApplicationCard>
+                      <Sequence DisplayName="Location" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_316">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:String" Name="LocationCheck" />
                         </Sequence.Variables>
@@ -2749,7 +2904,54 @@
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NTypeInto>
                       </Sequence>
-                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="NTypeInto_36" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Text="[Space]" Version="V4">
+                      <If Condition="[Sakadastro &lt;&gt; &quot;საკადასტროს გარეშე&quot;]" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="If_141">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,366.4" sap2010:WorkflowViewState.IdRef="Sequence_643">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,277.6" sap2010:WorkflowViewState.IdRef="NTypeInto_42" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Text="[Sakadastro]" Version="V4">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/edit/30417855" CVScreenId="026ea7f4-9e58-4ff3-9388-c4edc2d3a315" DesignTimeRectangle="661, 574, 596, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl type='text' placeholder='საკადასტრო კოდი' parentclass='sc-1f939879-5 dkEa-dI' /&gt;" Guid="d3c91899-3c36-4591-b2a5-1889f11553fc" InformativeScreenshot="ea7560e86f0efc04f6e27bfef93230ce.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' idx='2' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.VerifyOptions>
+                                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                </uix:VerifyExecutionTypeIntoOptions>
+                              </uix:NTypeInto.VerifyOptions>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NTypeInto>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_644">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NTypeInto_36" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Text="[Space]" Version="V4">
                         <uix:NTypeInto.Target>
                           <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="8d4caaa2-96be-4022-953b-1e09c2e981aa" DesignTimeRectangle="867, 438, 177, 45" DesignTimeScaleFactor="0.9375" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' class='sc-1f939879-6 krnPRg' placeholder='საერთო ფართი' /&gt;" Guid="d0f57d85-2d91-4683-a911-fc55224e9ff4" InformativeScreenshot="e674c3a0f79889d9be7c3ac4a8a369d9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                         </uix:NTypeInto.Target>
@@ -2770,7 +2972,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NTypeInto>
-                      <Sequence DisplayName="Damatebiti Informacia" sap:VirtualizedContainerService.HintSize="449.6,115.2" sap2010:WorkflowViewState.IdRef="Sequence_605">
+                      <Sequence DisplayName="Damatebiti Informacia" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_605">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2906,7 +3108,7 @@
                           </If.Else>
                         </If>
                       </Sequence>
-                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'TEXTAREA'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="NTypeInto_39" InteractionMode="Simulate" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Text="[Description]" Version="V4">
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'TEXTAREA'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NTypeInto_39" InteractionMode="Simulate" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Text="[Description]" Version="V4">
                         <uix:NTypeInto.Target>
                           <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" DesignTimeRectangle="678, 430, 561, 223" DesignTimeScaleFactor="0.9375" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' class='sc-4ccf129b-1 jSnFCR' placeholder='ჩაწერე აქ...' idx='1' /&gt;" Guid="6110374a-8611-441e-a319-591c3ffa4cdb" InformativeScreenshot="fc6fb8a7645dd78700833ee835c46400.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                         </uix:NTypeInto.Target>
@@ -2927,7 +3129,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NTypeInto>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'სრული ფასი'" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="NClick_267" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V4">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'სრული ფასი'" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_267" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V4">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="51d6d372-861c-4209-bc58-fd1ab7e9a4fe" DesignTimeRectangle="678, 533, 106, 20" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl tag='DIV' class='sc-3cdbea70-0 hWeVEK radio-button fr' innertext='სრული ფასი' /&gt;" Guid="71f3c486-a6e6-429c-b27d-2cb23b57dc55" InformativeScreenshot="aa61b823927ce73cf87466b2ecef3a24.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                         </uix:NClick.Target>
@@ -2948,7 +3150,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
-                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '$გამოჩნდეს საიტზე'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="NTypeInto_40" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Text="[Price]" Version="V4">
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '$გამოჩნდეს საიტზე'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NTypeInto_40" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Text="[Price]" Version="V4">
                         <uix:NTypeInto.Target>
                           <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" DesignTimeRectangle="985, 644, 254, 89" DesignTimeScaleFactor="0.9375" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' innertext='$გამოჩნდეს საიტზე' parentclass='sc-9c9d017-2 jKKqhD' /&gt;" Guid="4cd3bbec-96bd-4ce8-8eda-5ee46fed2fd7" InformativeScreenshot="c22e6cc214a76e795cd154e46e73d52a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                         </uix:NTypeInto.Target>
@@ -2959,7 +3161,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NTypeInto>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'WhatsApp'" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="NClick_268" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V4">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'WhatsApp'" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_268" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V4">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="c6f82e10-14de-4d51-a91b-06ee0baa8960" DesignTimeRectangle="866, 590, 183, 41" DesignTimeScaleFactor="0.9375" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' class='sc-d9bbc5d1-16 bUIzlo whatsappLabel' innertext=' WhatsApp' /&gt;" Guid="9f2e7fb4-e917-409f-9995-3d4f609d2bef" InformativeScreenshot="d9b0ce1e6b47f98edc0e825d4dc6df1c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                         </uix:NClick.Target>
@@ -2980,7 +3182,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Viber'" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="NClick_269" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V4">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Viber'" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_269" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V4">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="6de8bd08-77ae-4af9-96d4-23cd3bd87f12" DesignTimeRectangle="1056, 590, 183, 41" DesignTimeScaleFactor="0.9375" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' class='sc-d9bbc5d1-16 bUIzlo viberLabel' innertext=' Viber' /&gt;" Guid="d5af71ff-e182-42f3-b774-295e436b648a" InformativeScreenshot="1a6dd45c584d0e1d8cedec75537c9d0b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                         </uix:NClick.Target>
@@ -3001,7 +3203,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'გაგრძელება'" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="NClick_270" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V4">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'გაგრძელება'" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_270" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V4">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="b6669786-64ad-4b0f-b266-692f394d8fb7" DesignTimeRectangle="1115, 690, 144, 45" DesignTimeScaleFactor="0.9375" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' innertext='გაგრძელება' /&gt;" Guid="7efd8d6f-66db-4d26-8b44-3a71344d83aa" ImageBase64="" InformativeScreenshot="e1e5e26563e59a6ea3304f59bbbda28d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                         </uix:NClick.Target>
@@ -3022,7 +3224,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'განაცხადის განთავსება'" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="NClick_271" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V4">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'განაცხადის განთავსება'" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_271" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V4">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="4ee3541f-aa62-4d79-956f-591dbd36fdb1" DesignTimeRectangle="1404, 677, 207, 53" DesignTimeScaleFactor="0.9375" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' innertext='განაცხადის განთავსება' /&gt;" Guid="af6afa77-c259-4df8-95d7-db4c99e463af" InformativeScreenshot="c2d3dffc5115f0a86522cf52e064aede.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                         </uix:NClick.Target>
@@ -3043,7 +3245,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="2" DisplayName="Click 'ჩემი განცხადებები'" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="NClick_272" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V4">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="2" DisplayName="Click 'ჩემი განცხადებები'" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_272" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V4">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="1ad18ecb-eb65-4036-a1e4-7c05da1640c6" DesignTimeRectangle="798, 543, 321, 45" DesignTimeScaleFactor="0.9375" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' innertext='ჩემი განცხადებები' /&gt;" Guid="f3a8c8e3-81a4-42c2-9c22-e7afa5969186" ImageBase64="" InformativeScreenshot="77f5ffe260c8752508af58848c19e098.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                         </uix:NClick.Target>
@@ -3061,7 +3263,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
-                      <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'DIV'" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="SendHotkey_14" Key="r" KeyModifiers="Ctrl" SpecialKey="False">
+                      <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'DIV'" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="SendHotkey_14" Key="r" KeyModifiers="Ctrl" SpecialKey="False">
                         <ui:SendHotkey.Target>
                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="884ea28e-c4ed-49af-90bd-0d03a670e5cc" InformativeScreenshot="6bcfef3c4c0c17f93a04a1acf9577d1c" Selector="&lt;webctrl innertext='ჩემი განცხადებები' parentclass='sc-87c48459-1 eAJAUL' /&gt;">
                             <ui:Target.TimeoutMS>
@@ -3079,7 +3281,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:SendHotkey>
-                      <uix:NGetText DelayBefore="3" DisplayName="Get Text 'ID:30239899'" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="NGetText_24" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" TextString="[SS_ID]" Version="V4">
+                      <uix:NGetText DelayBefore="3" DisplayName="Get Text 'ID:30239899'" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NGetText_24" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" TextString="[SS_ID]" Version="V4">
                         <uix:NGetText.Target>
                           <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/user/my-applications" CVScreenId="165bff7f-2bc0-4b39-b3d2-cad895aadf9d" DesignTimeRectangle="845, 800, 91, 15" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='__next' tag='DIV' parentclass='sc-74fed925-0 laoLU' idx='1' /&gt;" Guid="d6f2da13-01ba-48d5-8a21-271b1981c213" ImageBase64="" InformativeScreenshot="4545b3c48de0fefe989d683011721778.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                         </uix:NGetText.Target>
@@ -3090,7 +3292,68 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NGetText>
-                      <Assign sap:VirtualizedContainerService.HintSize="449.6,77.6" sap2010:WorkflowViewState.IdRef="Assign_144">
+                      <uix:NGetText DisplayName="Get Text 'იყიდება 3 ოთახიანი ბინა…'" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NGetText_28" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" TextString="[RegionSS]" Version="V4">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/user/my-applications" CVScreenId="de6309e7-9549-4230-b986-939dd03fec7c" DesignTimeRectangle="838, 682, 603, 21" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H6' innertext='იყიდება*' class='sc-6e54cb25-6 fKsnoA' idx='1' /&gt;" Guid="cb8f2fec-f569-4e11-89e0-c1350788dc9c" ImageBase64="" InformativeScreenshot="b293b630167be413cb6824a4e65851b1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                        </uix:NGetText.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NGetText>
+                      <Assign sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="Assign_154">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[Raion]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(Raion, "რაიონი ", "")]</InArgument>
+                        </Assign.Value>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Assign>
+                      <If Condition="[RegionSS.Contains(Raion(0)+Raion(1)+Raion(2)+Raion(3)+Raion(4))]" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="If_140">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_640">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_153">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[RegionSS]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">
+                                  <Literal x:TypeArguments="x:String" Value="" />
+                                </InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_641">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                      <Assign sap:VirtualizedContainerService.HintSize="449.6,49.6" sap2010:WorkflowViewState.IdRef="Assign_144">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[SS_ID]</OutArgument>
                         </Assign.To>
@@ -3125,7 +3388,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:DeleteFolderX>
-              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{LinksCurrentRow.Item(0).ToString,LinksCurrentRow.Item(1).ToString,Price,MyHome_ID,SS_ID,Phone,Location,Sakadastro,Statusi,Space,DateTime.Today.ToString(&quot;dd-MM-yyyy&quot;),System.Text.RegularExpressions.Regex.Replace(Raion, &quot;რაიონი &quot;, &quot;&quot;)}]" DataTable="[ExtractDataTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="449.6,48" sap2010:WorkflowViewState.IdRef="AddDataRow_6">
+              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{LinksCurrentRow.Item(0).ToString,LinksCurrentRow.Item(1).ToString,Price,MyHome_ID,SS_ID,Phone,Location,Sakadastro,Statusi,Space,DateTime.Today.ToString(&quot;dd-MM-yyyy&quot;),Raion,RegionSS}]" DataTable="[ExtractDataTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="449.6,48" sap2010:WorkflowViewState.IdRef="AddDataRow_6">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
