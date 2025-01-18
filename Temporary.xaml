@@ -1,0 +1,1877 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Temporary" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1112.8,1652" sap2010:WorkflowViewState.IdRef="Temporary_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Temporary" sap:VirtualizedContainerService.HintSize="771.2,1587.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="ExceptionsTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BuildDataTable DataTable="[ExceptionsTable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="708.8,56.8" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;_x0031_&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;_x0032_&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:BuildDataTable>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: უძრავი ქონების პორტალი საქართველოში, ბინები, ყიდვა გაყიდვა გაქირავება - MyHome.g" sap:VirtualizedContainerService.HintSize="708.8,1441.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="341b3f47-db23-47be-a2d3-eab254183efa" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,1201.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Int32" Name="x" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="True" DisplayName="While" sap:VirtualizedContainerService.HintSize="529.6,970.4" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+              <ui:InterruptibleWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,824" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="MyHomeStreet" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[x]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">[x+1]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="innertext" DisplayName="Get Attribute 'oòsögemn 8 d'" sap:VirtualizedContainerService.HintSize="433.6,240" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_1" Result="[MyHomeStreet]" ScopeIdentifier="341b3f47-db23-47be-a2d3-eab254183efa" Version="V4">
+                    <uix:NGetAttributeGeneric.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.myhome.ge/" CVScreenId="18b4232e-4649-49a9-af19-1a659f1a40f7" DesignTimeRectangle="712, 466, 77, 17" DesignTimeScaleFactor="0.8333333134651184" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl parentid='container' tag='LABEL' idx='{0}' /&gt;&quot;, x)]" Guid="2105a9fa-ef52-429e-9abb-ec1b51f2dde4" InformativeScreenshot="139c75b6d3b1e2a435b770fe61022362.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი საქართველოში, ბინები, ყიდვა გაყიდვა გაქირავება - MyHome.ge' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                    </uix:NGetAttributeGeneric.Target>
+                  </uix:NGetAttributeGeneric>
+                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{MyHomeStreet}]" DataTable="[ExceptionsTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="433.6,220" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:AddDataRow>
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,136.8" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი" sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="bcfeb35d-2ae0-45fd-8930-100ea89297fb" Version="V2">
+                          <uix:NApplicationCard.Body>
+                            <ActivityAction x:TypeArguments="x:Object">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="601.6,2552" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'ქუჩა'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="539.2,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="bcfeb35d-2ae0-45fd-8930-100ea89297fb" Text="[Street]" Version="V4">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" DesignTimeRectangle="660, 490, 291, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='3' parentid='create-app-loc' tag='DIV' /&gt;" Guid="eb3ae0ed-eb65-4f56-94e0-b8ceb2423632" InformativeScreenshot="3a93de1f6679d0c9b583ce822804cf35.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                  </uix:NTypeInto.Target>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </uix:NTypeInto>
+                                <uix:NCheckState DisplayName="Check App State 'SPAN'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="539.2,924" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="bcfeb35d-2ae0-45fd-8930-100ea89297fb" Timeout="2" Version="V4">
+                                  <uix:NCheckState.IfExists>
+                                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,673.6" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bcfeb35d-2ae0-45fd-8930-100ea89297fb" Version="V4">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="ce26ede0-9521-4851-bd4d-29472ad5f2b9" DesignTimeRectangle="968, 676, 289, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='house-number' type='text' /&gt;" Guid="9579a299-90a8-4397-b02b-dcdc7c249cc8" InformativeScreenshot="f9f27fddc25e6a63f4a4bb9f766b6833.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                      </uix:NClick>
+                                      <Assign sap:VirtualizedContainerService.HintSize="433.6,114.4" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:String">[Street.Substring(2)]</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'ქუჩა'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,243.2" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="bcfeb35d-2ae0-45fd-8930-100ea89297fb" Text="[Street]" Version="V4">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" DesignTimeRectangle="660, 490, 291, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='3' parentid='create-app-loc' tag='DIV' /&gt;" Guid="eb3ae0ed-eb65-4f56-94e0-b8ceb2423632" InformativeScreenshot="3a93de1f6679d0c9b583ce822804cf35.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                        </uix:NTypeInto.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </uix:NTypeInto>
+                                    </Sequence>
+                                  </uix:NCheckState.IfExists>
+                                  <uix:NCheckState.IfNotExists>
+                                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,106.4" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Sequence>
+                                  </uix:NCheckState.IfNotExists>
+                                  <uix:NCheckState.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="7ed2d441-3668-462e-a3ce-b945a47597ab" DesignTimeRectangle="460, 603, 36, 36" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl class='icon-not_listed_location' tag='SPAN' /&gt;" Guid="86038e3c-f4b0-44df-9160-928921b3d191" InformativeScreenshot="f1394e253a65fdb870eaf53e33d58cad.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                  </uix:NCheckState.Target>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </uix:NCheckState>
+                                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="539.2,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                                  <ui:CommentOut.Body>
+                                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,531.2" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DelayBefore="2" DisplayName="Click 'აბულაძის ქ.'" sap:VirtualizedContainerService.HintSize="353.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bcfeb35d-2ae0-45fd-8930-100ea89297fb" Timeout="20" Version="V4">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="effbbb6a-68cd-4909-93bc-6fd22375fbb9" DesignTimeRectangle="174, 508, 608, 48" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}*' class='select__option css-10wo9uf-option' /&gt;&quot;, Street)]" FuzzyAccuracy="0.88" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}*' class='select__option css-10wo9uf-option' /&gt;&quot;, Street)]" Guid="c0f6ff8e-4243-4fdc-a6e7-22eea565a827" ImageBase64="" InformativeScreenshot="bd8e7f89847c01294a64e613b9001473.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target DesignTimeRectangle="174, 589, 608, 68" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl type='' class='select__group css-1s9izoc' tag='DIV' aaname='' check:innerText='{0}*' /&gt;&quot;, RaionChars)]" Guid="f7f4b4ef-855d-4911-86ab-cf193ca3abfb" SearchSteps="FuzzySelector" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'აბულაძის ქ.'" sap:VirtualizedContainerService.HintSize="353.6,216.8" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bcfeb35d-2ae0-45fd-8930-100ea89297fb" Timeout="5" Version="V4">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" DesignTimeRectangle="174, 589, 608, 68" DesignTimeScaleFactor="1" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl type='' class='select__group css-1s9izoc' tag='DIV' aaname='' check:innerText='{0}*{1}*' /&gt;&quot;, RaionChars, Street)]" Guid="01bd43d9-27fe-4e2e-a24b-d9b9f5bbfebd" InformativeScreenshot="65c1c82bf6c03606ea1fdff188db6f16.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                            <uix:TargetAnchorable.PointOffset>
+                                              <uix:PointOffset Position="BottomLeft" X="22" Y="-14" />
+                                            </uix:TargetAnchorable.PointOffset>
+                                          </uix:TargetAnchorable>
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                      </uix:NClick>
+                                    </Sequence>
+                                  </ui:CommentOut.Body>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:CommentOut>
+                                <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'იგოეთის ქ.'" sap:VirtualizedContainerService.HintSize="539.2,267.2" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="bcfeb35d-2ae0-45fd-8930-100ea89297fb" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
+                                  <uix:NKeyboardShortcuts.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" DesignTimeRectangle="660, 675, 291, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl parentid='create-app-loc' tag='DIV' parentclass='sc-19721b7a-0 fAZwZA css-b62m3t-container' /&gt;" Guid="120a0b08-0431-4f77-8672-8a00cdc4de39" InformativeScreenshot="f737402e7d92adc18f9352bdaa7f37ed.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                  </uix:NKeyboardShortcuts.Target>
+                                  <uix:NKeyboardShortcuts.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NKeyboardShortcuts.VerifyOptions>
+                                </uix:NKeyboardShortcuts>
+                                <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="539.2,327.2" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="[x.ToString+&quot;. &quot;+MyHomeStreet]" OptionsString="Fine;Not Fine" Title="Check Location">
+                                  <ui:InputDialog.Result>
+                                    <OutArgument x:TypeArguments="x:String">[CheckValue]</OutArgument>
+                                  </ui:InputDialog.Result>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:InputDialog>
+                                <If Condition="[CheckValue=&quot;Fine&quot;]" sap:VirtualizedContainerService.HintSize="539.2,636" sap2010:WorkflowViewState.IdRef="If_3">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <If.Then>
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Sequence>
+                                  </If.Then>
+                                  <If.Else>
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,448" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                      <Sequence.Variables>
+                                        <Variable x:TypeArguments="x:String" Name="SSLocation" />
+                                      </Sequence.Variables>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{MyHomeStreet}]" DataTable="[ExceptionsTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="353.6,220" sap2010:WorkflowViewState.IdRef="AddDataRow_2">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:AddDataRow>
+                                      <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[ExceptionsTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="353.6,139.2" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="თბილისის შემოგარენი" WorkbookPath="C:\Users\99559\Desktop\LocationExceptions1.xlsx">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:WriteRange>
+                                    </Sequence>
+                                  </If.Else>
+                                </If>
+                              </Sequence>
+                            </ActivityAction>
+                          </uix:NApplicationCard.Body>
+                          <uix:NApplicationCard.TargetApp>
+                            <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="1435fdb903a9f4713d6176e759cd901a.jpg" Selector="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" Title="ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი" Url="https://home.ss.ge/ka/udzravi-qoneba/create" />
+                          </uix:NApplicationCard.TargetApp>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NApplicationCard>
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:CommentOut>
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="688,1301.6" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[Street]" sap:VirtualizedContainerService.HintSize="625.6,56.8" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <x:Null x:Key="" />
+                          <Assign x:Key="ენდელაძის მოედ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_8">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ჭავჭავაძის გამზ.</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ელიავა ლ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_9">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ტ.ტაბიძის</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="წერეთლის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_10">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">თამარაშვილის ქ. (ვაკე)</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ვაშლიჯვარი" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_11">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">გოძიაშვილის ქ.</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ვასო გოძიაშვილის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_12">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">გოძიაშვილის ქ.</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="თეთრი დუქნის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_13">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">პ.სარაჯიშვილ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="წერეთელი თ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_14">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">კვანტალიან</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="გამყრელიძე ი. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_15">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ლვოვი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="დავითაშვილი მ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_16">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ოდიშელ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="მთაწმინდელი ე. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_17">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ვეძისის ქ.</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ნენავის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_18">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ვეძისის ქ.</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ფერცულიანი ო. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_19">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ართმელიძ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ქორიძე ფ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_20">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ოდიშელ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="წულუკიძე ვ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_21">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ოდიშელ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ჯიშკარიანი ნ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_22">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ვეძისის ქ.</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="აკაციის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_23">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ლისის ტბა</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ბერიტაშვილის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_24">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ლისის ტბა</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ბიწაძე ა. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_25">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ლისის ტბა</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="გვარამიძე ი. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_26">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ლისის ტბა</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="დგებუაძე ნ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_27">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ლისის ტბა</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ერისთავი მ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_28">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ლისის ტბა</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ზარწემის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_29">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ლისის ტბა</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="თუთის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_30">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ლისის ტბა</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="მწვანე მუხები" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_31">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ლისის ტბა</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ქვემო აჟარის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_32">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ლისის ტბა</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="აგარაკის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_33">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ლისის ტბა</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ლ. ასათიანის" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_34">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ლისის ტბა</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ნუცუბიძის პლ. III-მ/რ" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_35">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String" xml:space="preserve">ნუცუბიძის III </InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ნუცუბიძის პლ. I-მ/რ" sap:VirtualizedContainerService.HintSize="433.6,80.8" sap2010:WorkflowViewState.IdRef="Assign_36">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String" xml:space="preserve">ნუცუბიძის I </InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ნუცუბიძის პლ. II-მ/რ" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_37">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String" xml:space="preserve">ნუცუბიძის II </InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ნუცუბიძის პლ. - IV მ/რ" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_38">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ნუცუბიძის IV</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ნუცუბიძის პლ. - V მ/რ" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_39">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ნუცუბიძის V</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ნუცუბიძის პლ. II მ/რ. I კვარტ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_40">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String" xml:space="preserve">ნუცუბიძის II </InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="პ. დათუაშვილის ქ." sap:VirtualizedContainerService.HintSize="433.6,80.8" sap2010:WorkflowViewState.IdRef="Assign_41">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">დათუაშვილ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="პიკასოს ქ." sap:VirtualizedContainerService.HintSize="433.6,80.8" sap2010:WorkflowViewState.IdRef="Assign_42">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">მარგიან</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="რიონის ქ." sap:VirtualizedContainerService.HintSize="433.6,80.8" sap2010:WorkflowViewState.IdRef="Assign_43">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ცაგარელი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="სულაკაურის ქ." sap:VirtualizedContainerService.HintSize="433.6,80.8" sap2010:WorkflowViewState.IdRef="Assign_44">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ხვიჩიას</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ტეხურას ქ." sap:VirtualizedContainerService.HintSize="433.6,80.8" sap2010:WorkflowViewState.IdRef="Assign_45">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ტეხურ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ტატიშვილი გ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_46">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ალ.ყაზ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ფანასკერტელ-ციციშვილის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_47">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ფანასკერტელის</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ფიზკულტურის ჩიხ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_48">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ბოჭორიშვილ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ძოწენიძის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_49">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ნუცუბიძის ქ.</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="წინუბანის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_50">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">იყალთოს ქუჩა</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ჯიქია ვლ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_51">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">პოლიტკოვსკაია</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ათონელი გ. III შეს." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_52">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="აღმაშენებელის III ჩიხ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_53">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ათონელი გ. მე-5 შესახვევი" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_54">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ბერი გობრონის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_55">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="გურამიშვილი დ. I ჩიხ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_56">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="გორგასალი ვ. III ჩიხ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_57">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="დოლიძე ი. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_58">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ვაჩეიშვილი ა. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_59">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ვირსალაძე თ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_60">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="თამარ მეფის VIII ჩიხ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_61">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="თოფჩიშვილი გ. II ჩიხ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_62">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="თელოვანი" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_63">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="თაყაიშვილი ე. II ჩიხ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_64">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="იოაკიმე და ანას ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_65">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="კავთას II შეს." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_66">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="კვირაცხოველის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_67">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="მაჭავარიანი მ. I ჩიხ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_68">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="მესხი მ. I ჩიხ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_69">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="მირიანაშვილი დ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_70">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="მოციქულთა სწორი ნინოს ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_71">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="მირიან მეფე და ნანა დედოფალის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_72">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ოთხი ათასი მესხის I ჩიხი" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_73">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="რჩეულიშვილი ლ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_74">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="სარაჯიშვილი დ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_75">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="სურგულაძე ი. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_76">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="სონღულაშვილი ი. I ჩიხ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_77">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="სვეტიცხოველის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_78">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="სიაფები" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_79">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ფიროსმანის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_80">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="შმერლინგი რ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_81">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ჩარგალეთის II შეს." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_82">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ჩოლოყაშვილი ქ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_83">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ცაგარელი ა. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_84">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ცინცაძე ვ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_85">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ძველი ვეძისი" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_86">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="წერეთელი ა. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_87">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ჭიაურელი მ. I ჩიხ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_88">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ჭანტურია გ. I ჩიხ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_89">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ხანძთელი გ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_90">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ჯავახიშვილი მ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_91">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ჰოლდაკი ფ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_92">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="დიღმის ქედის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_93">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ქოშიგორა</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="კელასურის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_94">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ქოშიგორა</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="კელასურის I შესახვევი" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_95">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ქოშიგორა</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="კელასურის II შესახვევი" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_96">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ქოშიგორა</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="კელასურის მესამე ჩიხი" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_97">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ქოშიგორა</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="კერესელიძის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_98">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ქოშიგორა</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="უდაბნოს მონასტრის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_99">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ქოშიგორა</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ღლონტის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_100">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ქოშიგორა</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="მირიან მეფის და ნანა დედოფლის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_101">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სოფ. დიღომი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="66 ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_102">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ფატმანის</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="აფხაზეთის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_103">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">თავისუფლების ქ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ბელოი ტ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_104">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სტივენი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ბატონიშვილი ვ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_105">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ვახუშტი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ბერტა ფონ ზუტნერის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_106">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ბერტა</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <x:Null x:Key="გიორგი ბრწყინვალეს ქ." />
+                          <Assign x:Key="გეხტმანი გ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_107">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">გეხტმან</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="გულანშაროს ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_108">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ფატმანის</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="დიდი დიღომი - IV მ/რ" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_109">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">მირიან მეფის</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="დიდი დიღომი - II მ/რ" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_110">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">მირიან მეფის</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="დიდი დიღომი - III მ/რ" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_111">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">მირიან მეფის</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ერისთავი თ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_112">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">თავისუფლების</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ვახტანგ VI ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_113">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">გრიგოლ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="კაკაბაძე ს. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_114">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ავთანდილ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="კოსტავა მ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_115">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">თავისუფლების</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="კათოლიკოს აბრამ I ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_116">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ფარნავაზ მეფის გამზ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="მაჭავარიანი ა. I შეს." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_117">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">მარკო პოლოს</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="მ. პოლოს ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_118">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">მარკო პოლოს</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="მე-9 ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_119">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ასი ათასი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="მე-10 ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_120">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ასი ათასი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="მე-11 ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_121">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ასი ათასი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="მულღაზანზარის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_122">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ხატაეთი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ნინო აბაშიძე-ორბელიანის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_123">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">აბაშიძე-ორბელიანი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="პაპაშვილი გ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_124">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">გვირილები</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="რაინგესი ი. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_125">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ჰომერი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="სამაჩალოს ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_126">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">თავისუფლების</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ტილკე მ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_127">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სტივენი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ტილკე მ. I ჩიხ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_128">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">სტივენი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ჭანდარის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_129">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ჭანდრის</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ჭაშნაგირის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_130">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ფარსადანი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ხელაშვილი მ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_131">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ასი ათასი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ჯავახიშვილი ალ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_132">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">თავდადებულ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="აისის II ჩიხ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_133">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ბერაძ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ბობ უოლშის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_134">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">უოლშ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="გელოვანი ა. II ჩიხ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_135">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ა.გელოვან</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="გვიმრაძე ტ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_136">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ეგრის</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="დიღმისწყლის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_137">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ჩაჩავას</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="დიღმის ჭალა" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_138">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">უოლშ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="დიღომი 7" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_139">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ფერაძ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="თარხნიშვილი მ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_140">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ბერაძ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="კარმელი შ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_141">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ჩოხელი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="მაღალაძეების ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_142">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ჩაჩავას</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="მელქაძე კ. I ჩიხ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_143">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ჩაჩავას</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ნიჟარაძე გ. I შეს." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_144">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ჩოხელი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="სოლოღაშვილი ო. I ჩიხ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_145">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ფერაძ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="სარიშვილი ი. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_146">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ჩოხელი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ყურაშვილი პ. I ჩიხ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_147">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ფერაძ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="შარაშიძე ქ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_148">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ფერაძ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ჩაჩავა ნ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_149">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ჩაჩავას</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ციციშვილი გ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_150">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ჩოხელი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ძმები კარბელაშვილების ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_151">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ჩოხელი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ძნელაძე გ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_152">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ჩოხელი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="წებელდის I ჩიხ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_153">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ფერაძ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ხახულის ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_154">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ჩოხელი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ხეოშვილი გ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_155">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ჩოხელი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ჯაფარიძე გ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_156">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ბერაძ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="გელოვანი ა. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_157">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ბერაძ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <x:Null x:Key="ბარნოვის ქ." />
+                          <x:Null x:Key="ცხინვალის ქ." />
+                          <x:Null x:Key="მამასახლისოვის ქ." />
+                          <Assign x:Key="მგალობლიშვილი ს. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_158">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">მგალობლიშვილ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <x:Null x:Key="ფერმწერთა ქ." />
+                          <Assign x:Key="ჭილაია ა. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_159">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ჭილაიას ქ.</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="მირიანაშვილი ს. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_160">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">მირიანაშვილ</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign x:Key="ჩოხელი გ. ქ." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_161">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">ჩოხელი</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Switch>
+                        <If Condition="[Street=MyHomeStreet]" sap:VirtualizedContainerService.HintSize="625.6,1156" sap2010:WorkflowViewState.IdRef="If_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <If.Then>
+                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="592,889.6" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If Condition="[System.Text.RegularExpressions.Regex.IsMatch(Street, &quot;\b\w+\.\s\w+\.&quot;)]" sap:VirtualizedContainerService.HintSize="529.6,582.4" sap2010:WorkflowViewState.IdRef="If_4">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <If.Then>
+                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,307.2" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_162">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[StreetFirstChar]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(Street, "\b(\w\.)").Groups(1).Value]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_163">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[StreetFirstChar+Street]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                  </Sequence>
+                                </If.Then>
+                                <If.Else>
+                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Sequence>
+                                </If.Else>
+                              </If>
+                              <Assign sap:VirtualizedContainerService.HintSize="529.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_164">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(Street, "^[^ ]*").Value]</InArgument>
+                                </Assign.Value>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="529.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_165">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[Street]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[Street.Substring(0, Street.Length - 1)]</InArgument>
+                                </Assign.Value>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Assign>
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:CommentOut>
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="433.6,48" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="608,1625.6" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: უძრავი ქონების პორტალი" sap:VirtualizedContainerService.HintSize="545.6,1536.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="83ef2bc4-2b1f-4cf0-a8d2-af86d036f412" Version="V2">
+                          <uix:NApplicationCard.Body>
+                            <ActivityAction x:TypeArguments="x:Object">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1296.8" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'ჩაწერეთ ქუჩა'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="449.6,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="83ef2bc4-2b1f-4cf0-a8d2-af86d036f412" Text="[MyHomeStreet]" Version="V4">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://statements.myhome.ge/ka/statement/create?referrer=myhome" CVScreenId="9cf6b735-f44a-437e-85f4-d1e544adca42" DesignTimeRectangle="573, 428, 522, 53" DesignTimeScaleFactor="0.9375" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' class='input-container relative flex h-12 md:h-14 cursor-text items-end overflow-hidden border-gray-40 rounded-lg border focus-within:border-black-100' parentclass='select-container' /&gt;" Guid="2043c2dc-5d13-4386-a9ab-47092ef5255f" InformativeScreenshot="6255906a42b101819c89cec530c80942.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                  </uix:NTypeInto.Target>
+                                </uix:NTypeInto>
+                                <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="innertext" DisplayName="Get Attribute 'წავკისის ველი'" sap:VirtualizedContainerService.HintSize="449.6,240" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_2" Result="[Street]" ScopeIdentifier="83ef2bc4-2b1f-4cf0-a8d2-af86d036f412" Version="V4">
+                                  <uix:NGetAttributeGeneric.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://statements.myhome.ge/ka/statement/create?referrer=myhome" CVScreenId="f7bb012c-9f7d-404a-825e-22942d1d916b" DesignTimeRectangle="596, 510, 456, 19" DesignTimeScaleFactor="0.9375" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='0' tag='SPAN' class='inline-block w-full text-sm text-black-100' parentclass='cursor-pointer w-full px-3 py-2 hover:bg-gray-10 rounded-lg' idx='1' /&gt;" Guid="f313721a-1cb4-4460-ac78-8c55f2628219" InformativeScreenshot="8b78e754dbe8be2b1f2080b9ce91867b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                  </uix:NGetAttributeGeneric.Target>
+                                </uix:NGetAttributeGeneric>
+                                <If Condition="[Street&lt;&gt;MyHomeStreet]" sap:VirtualizedContainerService.HintSize="449.6,716" sap2010:WorkflowViewState.IdRef="If_6">
+                                  <If.Then>
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,448" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{MyHomeStreet, Street}]" DataTable="[ExceptionsTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="353.6,220" sap2010:WorkflowViewState.IdRef="AddDataRow_3">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:AddDataRow>
+                                      <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[ExceptionsTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="353.6,139.2" sap2010:WorkflowViewState.IdRef="WriteRange_3" SheetName="MyhomeExceptions" WorkbookPath="C:\Users\99559\Desktop\LocationExceptions1.xlsx">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:WriteRange>
+                                    </Sequence>
+                                  </If.Then>
+                                  <If.Else>
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Sequence>
+                                  </If.Else>
+                                </If>
+                              </Sequence>
+                            </ActivityAction>
+                          </uix:NApplicationCard.Body>
+                          <uix:NApplicationCard.TargetApp>
+                            <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="356cba6a5b30132b5500969d37170214.jpg" Selector="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი' /&gt;" Title="უძრავი ქონების პორტალი" Url="https://statements.myhome.ge/ka/statement/create?referrer=myhome" />
+                          </uix:NApplicationCard.TargetApp>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NApplicationCard>
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:CommentOut>
+                </Sequence>
+              </ui:InterruptibleWhile.Body>
+            </ui:InterruptibleWhile>
+            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[ExceptionsTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="529.6,140.8" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="შემოგარენის გარდა" WorkbookPath="C:\Users\99559\Desktop\LocationExceptions1.xlsx">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:WriteRange>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="a11c370a59b79573436c66f02943e961.jpg" Selector="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი საქართველოში, ბინები, ყიდვა გაყიდვა გაქირავება - MyHome.ge' /&gt;" Title="უძრავი ქონების პორტალი საქართველოში, ბინები, ყიდვა გაყიდვა გაქირავება - MyHome.ge" Url="https://www.myhome.ge/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
